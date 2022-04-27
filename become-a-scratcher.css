@@ -1,0 +1,1005 @@
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.button {
+  display: inline-block;
+  margin: 0.5em 0;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #4d97ff;
+  cursor: pointer;
+  padding: 1em 1.25em;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  /* USER BUTTON STATES */
+  /* DATA BUTTON STATES */
+}
+.button:focus {
+  outline: none;
+}
+.button.white {
+  background-color: white;
+  color: #4d97ff;
+}
+.button.pass {
+  background-color: #0fbd8c;
+}
+.button.fail {
+  background-color: #ffab1a;
+}
+.button:disabled {
+  box-shadow: none;
+}
+.button.large {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.75rem 1.25rem 0.8125rem;
+}
+.button.icon-right img {
+  height: 1.25rem;
+  margin-bottom: -0.25rem;
+  margin-left: 0.5rem;
+  margin-right: -0.25rem;
+}
+
+.forms-close-button {
+  padding: 0;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.forms-close-button img {
+  padding-top: 0.5rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.overflow-hidden {
+  /* to avoid double scroll bars this
+  gets added to body while modal is open */
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  margin: 3.75rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  background-color: white;
+  padding: 0;
+  width: 48.75rem;
+}
+.modal-content:focus {
+  outline: none;
+}
+@media only screen and (max-width : 941px) {
+  .modal-content {
+    margin-top: 0;
+    width: 100%;
+    overflow: auto;
+  }
+}
+@media only screen and (max-width : 479px), only screen and (max-height : 479px) {
+  .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 510;
+  background-color: rgba(77, 151, 255, 0.7);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.modal-content-close-img {
+  padding-top: 0.5rem;
+}
+
+/* Close button, Submit button, etc. */
+.action-buttons {
+  display: flex;
+  margin: 1.125rem 0.8275rem 0.9375rem 0.8275rem;
+  line-height: 1.5rem;
+  justify-content: flex-end !important;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width : 941px) {
+  .action-buttons {
+    justify-content: center !important;
+    flex-direction: row !important;
+  }
+}
+
+/* setting overall modal to contain overflow looks good, but isn't
+compatible with elements (like validation popups) that need to bleed
+past modal boundary. This class can be used to force modal button
+row to appear to contain overflow. */
+.action-buttons-overflow-fix {
+  margin-bottom: 0.9375rem;
+}
+
+/* For action button row where left/right margin is handled by parent element */
+.action-buttons.action-buttons-no-inset {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.action-button {
+  margin: 0 0 0 0.54625rem;
+  border-radius: 0.25rem;
+  padding: 6px 1.25rem 14px 1.25rem;
+  height: 36px;
+}
+
+.action-button.close-button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.action-button-text {
+  display: flex;
+}
+
+.action-button.disabled {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.error-text {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffab1a;
+  padding: 1rem;
+  min-height: 1rem;
+  overflow: visible;
+  color: white;
+}
+
+.modal-sizes * {
+  box-sizing: border-box;
+}
+
+.modal-sizes {
+  margin: 100px auto;
+  outline: none;
+  padding: 0;
+  max-width: 36.25rem;
+  /* 580px; */
+  user-select: none;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px), only screen and (min-height : 480px) and (max-height : 767px) {
+  .modal-sizes {
+    margin: 40px auto;
+  }
+}
+@media only screen and (max-width : 479px), only screen and (max-height : 479px) {
+  .modal-sizes {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+.modal-sizes .modal-header {
+  padding-top: 0.75rem;
+  width: 100%;
+  height: 3rem;
+}
+@media only screen and (max-width : 479px), only screen and (max-height : 479px) {
+  .modal-sizes .modal-header {
+    border-radius: 0;
+  }
+}
+.modal-sizes .modal-content {
+  font-size: 0.875rem;
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-row.column {
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row.uneven {
+  align-items: flex-start;
+}
+.flex-row.uneven .short {
+  width: 13.75em;
+}
+.flex-row.uneven .long {
+  width: 38.75em;
+  text-align: left;
+}
+@media only screen and (max-width : 767px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .flex-row.uneven .short,
+.flex-row.uneven .long {
+    margin: auto;
+    width: 90%;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.not-available-image {
+  padding: 5rem 0 2rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.title-banner {
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+  margin-bottom: 40px;
+  background-color: #0fbd8c;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.title-banner-h1,
+.title-banner-p {
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+
+.title-banner-p {
+  max-width: 500px;
+}
+
+.title-banner-strong {
+  font-weight: 700;
+}
+
+.title-banner.mod-blue-bg {
+  background-color: #4d97ff;
+}
+.title-banner.mod-blue-bg a {
+  color: white;
+}
+.title-banner.mod-blue-bg a.mod-underline {
+  text-decoration: underline;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.warning-banner {
+  background-color: #ff661a;
+  margin-bottom: 0;
+}
+.warning-banner .warning-banner-container {
+  justify-content: center;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+html, body {
+  background-color: white !important;
+}
+
+.col {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+.button .left-arrow {
+  padding-right: 4px;
+}
+@media only screen and (max-width : 479px) {
+  .button .left-arrow {
+    padding: 0px;
+  }
+}
+.button .right-arrow {
+  padding-left: 4px;
+}
+@media only screen and (max-width : 479px) {
+  .button .right-arrow {
+    padding: 0px;
+  }
+}
+
+.no-invitation {
+  display: flex;
+  max-width: 640px;
+  margin: auto;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8rem;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.no-invitation h2 {
+  margin: 20px 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 40px;
+}
+@media only screen and (max-width : 767px) {
+  .header .section {
+    display: none;
+  }
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal-content {
+  line-height: 1.8rem !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+}
+.modal-content .finish-later-modal-header {
+  background-color: #4d97ff;
+  color: white;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px 7px 0px 0px;
+}
+.modal-content .finish-later-modal-content {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content .finish-later-modal-content button {
+  padding: 5px 10px;
+}
+.modal-content h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.modal-content .profile-page-image {
+  margin: 35px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.congratulations-page {
+  display: flex;
+  align-items: normal;
+  min-height: 100vh;
+}
+@media only screen and (max-width : 767px) {
+  .congratulations-page {
+    flex-direction: column;
+  }
+}
+.congratulations-page .header {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+@media only screen and (max-width : 767px) {
+  .congratulations-page .header {
+    position: static;
+    flex-direction: row;
+  }
+}
+.congratulations-page .congratulations-text-layout {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: space-between;
+}
+@media only screen and (max-width : 767px) {
+  .congratulations-page .congratulations-text-layout {
+    padding-top: 0px;
+  }
+}
+.congratulations-page .congratulations-text-layout .center-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.congratulations-page .congratulations-text-layout .congratulations-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+}
+.congratulations-page .congratulations-image-layout {
+  flex: 0.9;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #E9F1FC;
+}
+@media only screen and (max-width : 767px) {
+  .congratulations-page .congratulations-image-layout {
+    width: 100vw;
+    order: -1;
+    margin-top: -90px;
+  }
+}
+.congratulations-page .congratulations-image-layout .congratulations-image-container {
+  position: relative;
+  display: flex;
+  margin: auto;
+  height: 375px;
+}
+.congratulations-page .congrats-banner-image {
+  width: 328px;
+}
+
+.invitation-card {
+  background-color: white;
+  margin: 10px;
+  border-radius: 7px;
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+}
+.invitation-card .invitation-image {
+  margin-bottom: 20px;
+}
+.invitation-card .invitation-icon {
+  border-radius: 3px;
+  width: 50px;
+  margin: 0px 10px;
+}
+.invitation-card button {
+  margin: 10px;
+  margin-top: 30px;
+}
+.invitation-card .invitation-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.blue-background {
+  background-color: #3373cc;
+}
+
+.labeled-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.labeled-icon img {
+  margin-right: 20px;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.navigation .dotRow {
+  display: flex;
+  justify-content: space-between;
+  width: 244px;
+  min-width: 0px;
+  padding: 0px 5px;
+}
+.navigation .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .active {
+  border: solid 2px #4280d9;
+  background-color: #4c97fe;
+  margin-top: -2px;
+}
+@media only screen and (max-width : 479px) {
+  .navigation .navText {
+    display: none;
+  }
+}
+
+.onboarding {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+.onboarding h1 {
+  line-height: 3rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.onboarding button {
+  padding: 0.3em 0.9em;
+}
+.onboarding .content {
+  flex: 1;
+  display: flex;
+  max-width: 1000px;
+  padding: auto;
+  margin: auto;
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .content {
+    flex-direction: column;
+  }
+}
+.onboarding button.finish-later {
+  background-color: rgba(0, 0, 0, 0);
+  color: #4d97ff;
+  border: solid 1px #4d97ff;
+}
+.onboarding button.secondary-finish-later {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: solid 1px white;
+}
+.onboarding button.go-back {
+  background-color: white;
+  color: #4d97ff;
+  border: solid 1px #4d97ff;
+}
+.onboarding .image-content {
+  display: flex;
+  position: relative;
+  flex: 4;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .image-content {
+    flex: 12;
+    order: 1;
+    align-items: flex-end;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .image-content img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.onboarding .image-inner-content {
+  position: relative;
+}
+.onboarding .image-content-1 {
+  display: flex;
+  flex: 4;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .image-content-1 {
+    flex: 12;
+    order: 1;
+    align-items: flex-end;
+    height: 250px;
+  }
+}
+.onboarding .image-content-1 img {
+  z-index: 100;
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .image-content-1 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .image-content-1 {
+    background-color: #E9F1FC;
+  }
+}
+.onboarding .text-content {
+  flex: 8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px;
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .text-content {
+    flex: 12;
+    order: 2;
+    padding-top: 0px;
+    justify-content: flex-start;
+  }
+}
+.onboarding .opening-text-content {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+@media only screen and (max-width : 767px) {
+  .onboarding .opening-text-content {
+    flex: 12;
+    order: 2;
+    padding-top: 0px;
+  }
+}
+
+.hooray-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.hooray-screen h1 {
+  text-align: center;
+}
+.hooray-screen .hooray-links {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hooray-screen .hooray-link {
+  display: flex;
+  margin: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hooray-screen .hooray-confetti {
+  opacity: 1;
+}
+.hooray-screen .hooray-appear {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.hooray-screen .hooray-disappear {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.congratulations-avatar {
+  position: absolute;
+  border-radius: 15%;
+  width: 60px;
+  height: 60px;
+  top: 170px;
+  left: 124px;
+}
+
+.congratulations-username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: absolute;
+  top: 231px;
+  left: -18px;
+  right: 0;
+}
+
+.security-avatar {
+  position: absolute;
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  top: 172px;
+  left: 149px;
+}
+@media only screen and (max-width : 767px) {
+  .security-avatar {
+    width: 60px !important;
+    height: 60px !important;
+    top: 140.5px;
+    left: 121.5px;
+  }
+}

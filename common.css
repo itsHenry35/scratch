@@ -1,0 +1,215 @@
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+/* Tags */
+html,
+body {
+  display: block;
+  margin: 0;
+  background-color: #4280d7;
+  padding: 0;
+  color: #575e75;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: #575e75;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+p.legal {
+  font-size: 0.8rem;
+}
+p.intro {
+  font-size: 1.1rem;
+}
+p.callout {
+  margin: 1.5em 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: rgba(77, 151, 255, 0.1);
+  padding: 1.25em;
+}
+p.callout.orange {
+  background-color: rgba(244, 157, 37, 0.1);
+}
+p a {
+  white-space: nowrap;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  cursor: pointer;
+  color: #4d97ff;
+  font-weight: bold;
+}
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #4d97ff;
+}
+a:hover {
+  text-decoration: none;
+  color: #4280d7;
+}
+
+/* Classes */
+.empty {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: rgba(77, 151, 255, 0.1);
+  padding: 10px;
+  text-align: center;
+  line-height: 2rem;
+  color: #575e75;
+}
+.empty h4 {
+  color: #575e75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 1.7em;
+  color: #575e75;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+::selection {
+  background-color: rgba(77, 151, 255, 0.25);
+}
+
+ol,
+ul {
+  padding-left: 20px;
+  line-height: 1.5em;
+  font-size: 1rem;
+  font-weight: normal;
+}
+ol li,
+ul li {
+  margin: 0.75em 0;
+}
+
+dl {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  margin: 0;
+}
+
+#view {
+  display: inline-block;
+  /* NOTE: Margin should match height in navigation.scss */
+  margin-top: 50px;
+  background-color: #fcfcfc;
+  padding: 20px 0;
+  min-width: 100%;
+  min-height: 680px;
+}

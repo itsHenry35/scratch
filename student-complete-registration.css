@@ -1,0 +1,1475 @@
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .deck {
+    text-align: center;
+  }
+
+  .slide {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .deck {
+    text-align: center;
+  }
+
+  .slide {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .deck {
+    text-align: center;
+  }
+
+  .slide {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .slide {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.deck {
+  min-height: 100vh;
+}
+.deck .logo {
+  margin-left: 2px;
+  padding: 12px 0;
+  width: 76px;
+}
+.deck .slide {
+  max-width: 28.75rem;
+}
+.deck .card {
+  width: 23.75rem;
+}
+.deck .input {
+  width: 100%;
+}
+.studio-status-icon-spinner {
+  /* This class can be used on an icon that should spin.
+  It first plays the intro animation, then spins forever. */
+  animation-name: intro, spin;
+  animation-duration: 0.25s, 1s;
+  animation-timing-function: cubic-bezier(0.3, -3, 0.6, 3), cubic-bezier(0.4, 0.1, 0.4, 1);
+  animation-delay: 0s, 0.25s;
+  animation-iteration-count: 1, infinite;
+  animation-direction: normal;
+  width: 1.4rem;
+  /* standard is 1.4 rem but can be overwritten by parent */
+  height: 1.4rem;
+  transform-origin: center;
+}
+
+@keyframes intro {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.button {
+  display: inline-block;
+  margin: 0.5em 0;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #4d97ff;
+  cursor: pointer;
+  padding: 1em 1.25em;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  /* USER BUTTON STATES */
+  /* DATA BUTTON STATES */
+}
+.button:focus {
+  outline: none;
+}
+.button.white {
+  background-color: white;
+  color: #4d97ff;
+}
+.button.pass {
+  background-color: #0fbd8c;
+}
+.button.fail {
+  background-color: #ffab1a;
+}
+.button:disabled {
+  box-shadow: none;
+}
+.button.large {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.75rem 1.25rem 0.8125rem;
+}
+.button.icon-right img {
+  height: 1.25rem;
+  margin-bottom: -0.25rem;
+  margin-left: 0.5rem;
+  margin-right: -0.25rem;
+}
+
+.forms-close-button {
+  padding: 0;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.forms-close-button img {
+  padding-top: 0.5rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.card {
+  border-radius: 0.5em;
+  box-shadow: 0 0 0 0.125rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.card .card-button {
+  display: block;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: none;
+  background-color: #0fbd8c;
+  width: 23.75rem;
+  height: 4rem;
+}
+.card .card-button:hover {
+  box-shadow: none;
+}
+.card .form {
+  padding: 3rem 4rem;
+}
+.card .form .card-button {
+  margin: 0 0 -3rem -4rem;
+}
+.card .form .row {
+  margin-bottom: 1.2rem;
+}
+.card .form .row.has-error .input {
+  border: 1px solid #ffab1a;
+}
+.card .form .row .col-sm-9 {
+  position: relative;
+}
+
+@media only screen and (max-width : 479px) {
+  .card {
+    width: 22.5rem;
+  }
+  .card .form {
+    text-align: left;
+  }
+  .card .form .button {
+    width: 22.5rem;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .card .input {
+    width: 90%;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.validation-message {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(16rem, 0);
+  margin-left: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffab1a;
+  padding: 1rem;
+  max-width: 18.75rem;
+  min-height: 1rem;
+  overflow: visible;
+  color: white;
+  z-index: 1;
+  font-weight: 500;
+}
+.validation-message:before {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: -0.5rem;
+  transform: rotate(45deg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffab1a;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+}
+
+.validation-left {
+  left: unset;
+  right: 0;
+  margin-left: unset;
+  margin-right: 1rem;
+  transform: translate(-16rem, 0);
+}
+.validation-left:before {
+  left: unset;
+  right: -0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+  border-left: none;
+}
+
+@media only screen and (max-width : 941px) {
+  .validation-message {
+    position: relative;
+    transform: none;
+    margin: inherit;
+    width: 100%;
+    height: inherit;
+  }
+  .validation-message:before {
+    display: none;
+  }
+}
+.validation-error {
+  background-color: #ffab1a;
+}
+.validation-error:before {
+  background-color: #ffab1a;
+}
+
+.validation-info {
+  background-color: #4d97ff;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.15);
+}
+.validation-info:before {
+  background-color: #4d97ff;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.char-count {
+  letter-spacing: 1px;
+  color: rgba(87, 94, 117, 0.75);
+  font-weight: 500;
+}
+.char-count.overmax {
+  color: #ffab1a;
+}
+/*
+ * Styles for the Row component used by formsy-react-components
+ * Should be imported for each component that extends one of
+ * the formsy-react-components
+ */
+.row .required-symbol {
+  display: none;
+}
+.row label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+.row.no-label label {
+  display: none;
+}
+
+/* allow elements such as validation errors to position relative to this row */
+.row-with-tooltip {
+  position: relative;
+}
+
+.row-label {
+  margin-bottom: 0.75rem;
+  line-height: 1.7rem;
+}
+
+.row-inline {
+  display: flex;
+}
+
+/* override margin-bottom so placing a label next to a radio button does not
+mess up vertical alignment */
+.row-inline label {
+  margin-bottom: 0;
+}
+@charset "UTF-8";
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.row .checkbox label {
+  font-weight: 300;
+}
+.row .checkbox input[type=checkbox] {
+  display: block;
+  float: left;
+  margin-right: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: 1.25rem;
+  height: 1.25rem;
+  appearance: none;
+}
+.row .checkbox input[type=checkbox]:checked, .row .checkbox input[type=checkbox]:focus {
+  transition: all 0.5s ease;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+.row .checkbox input[type=checkbox]:checked {
+  background-color: #4d97ff;
+  text-align: center;
+  text-indent: 0.125rem;
+  line-height: 1.25rem;
+  font-size: 0.75rem;
+}
+.row .checkbox input[type=checkbox]:checked:after {
+  color: white;
+  content: "✔";
+}
+.checkbox-group .row .col-sm-9 {
+  flex-flow: column wrap;
+}
+.checkbox-group .row .col-sm-9 .checkbox {
+  margin: 0.5rem 0;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.general-error {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #ffab1a;
+  padding: 1rem;
+  color: white;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.row label {
+  font-weight: 500;
+}
+
+.input {
+  transition: all 0.5s ease;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 0 1rem;
+  height: 3rem;
+  color: #575e75;
+  font-size: 0.875rem;
+  /* IE10/11-specific style resets */
+}
+.input:focus {
+  transition: all 0.5s ease;
+  outline: none;
+  border: 1px solid #4d97ff;
+}
+.input.fail {
+  border: 1px solid #ffab1a;
+}
+.input.pass {
+  border: 1px solid #0fbd8c;
+}
+.input::-ms-reveal, .input::-ms-clear {
+  display: none;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.row .radio label {
+  font-weight: 300;
+}
+.row .col-sm-9 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.row .col-sm-9 input[type=radio] {
+  margin-top: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 0.875rem;
+  height: 0.875rem;
+  appearance: none;
+}
+.row .col-sm-9 input[type=radio]:checked, .row .col-sm-9 input[type=radio]:focus {
+  outline: none;
+}
+.row .col-sm-9 input[type=radio]:checked {
+  transition: all 0.25s ease;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  background-color: #4d97ff;
+}
+.row .col-sm-9 input[type=radio]:checked:after {
+  display: block;
+  transform: translate(0.25rem, 0.25rem);
+  border-radius: 50%;
+  background-color: white;
+  width: 0.25rem;
+  height: 0.25rem;
+  content: "";
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.select label {
+  font-weight: 500;
+}
+.select select {
+  transition: border 0.5s ease;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fafafa url("/svgs/forms/caret.svg") no-repeat right center;
+  padding-right: 4rem;
+  padding-left: 1rem;
+  width: 100%;
+  height: 3rem;
+  color: #575e75;
+  font-size: 0.875rem;
+  appearance: none;
+  -webkit-appearance: none;
+  /* added to fix dropdown appearance on safari */
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select::-ms-value {
+  background-color: inherit;
+  padding-left: 1rem;
+  color: inherit;
+}
+.select select:focus {
+  outline: none;
+  border: 1px solid #4d97ff;
+}
+.select select:-moz-focusring {
+  text-shadow: 0 0 0 #575e75;
+  color: transparent;
+}
+.select select:focus, .select select:hover {
+  background: #fafafa url("/svgs/forms/caret-hover.svg") no-repeat right center;
+}
+.select select > option {
+  background-color: white;
+  width: 100%;
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.slide {
+  padding: 10px;
+}
+.slide > h2,
+.slide > .description {
+  text-align: center;
+  color: white;
+}
+.slide > .description {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.slide .card {
+  margin: 0 auto;
+}
+.slide .step-navigation {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width : 767px) {
+  .slide {
+    padding: 0;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.step-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.step-navigation li {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+.step-navigation li .indicator {
+  border-radius: 0.25rem;
+  background-color: white;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.step-navigation li.active .indicator {
+  background-color: #0fbd8c;
+}
+.step-navigation li.selected {
+  border: 1px solid white;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.textarea {
+  transition: all 1s ease;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  min-height: 15rem;
+  line-height: 1.75em;
+  color: #575e75;
+  font-size: 0.875rem;
+}
+.textarea:focus {
+  transition: all 1s ease;
+  outline: none;
+  border: 1px solid #4d97ff;
+}
+.textarea.fail {
+  border: 1px solid #ffab1a;
+}
+.textarea::placeholder {
+  font-style: italic;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.tooltip .tip {
+  display: inline-flex;
+  margin: 0 0.5rem;
+}
+.tooltip .tip img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.125rem rgba(0, 0, 0, 0.1);
+  background-color: #4d97ff;
+  padding: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.tooltip .expand {
+  position: absolute;
+  transform: translate(-2.75rem, 2rem);
+  visibility: hidden;
+  z-index: 1;
+  margin-top: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #4d97ff;
+  padding: 1rem;
+  width: 13.75rem;
+  text-align: left;
+  color: white;
+}
+.tooltip .expand:before {
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  transform: rotate(45deg);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #4d97ff;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+}
+.tooltip:hover .expand {
+  visibility: visible;
+}
+
+@media only screen and (max-width : 941px) {
+  .tooltip {
+    display: block;
+  }
+  .tooltip .expand {
+    display: none;
+    position: relative;
+    clear: both;
+    transform: none;
+  }
+  .tooltip .expand:before {
+    display: none;
+  }
+  .tooltip:hover .expand {
+    display: block;
+    margin: 5px auto;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.registration-step .demographics-checkbox-is-robot {
+  display: none;
+}
+.registration-step .invite-avatar {
+  display: block;
+  margin: 0 auto 1rem auto;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+.registration-step .other-input {
+  float: right;
+  width: 90%;
+}
+.registration-step .other-input .row {
+  margin-left: 0.5rem;
+}
+.registration-step .other-input .row .validation-message {
+  transform: translate(14rem, 0);
+}
+.registration-step .row label {
+  font-weight: bold;
+}
+.registration-step .row .checkbox label {
+  font-weight: 300;
+}
+.registration-step .help-text {
+  margin: 0.25rem 0;
+  text-align: left;
+  color: #b3b3b3;
+}
+.registration-step.class-invite-step {
+  text-align: center;
+}
+.registration-step.class-invite-step > p a {
+  text-decoration: underline;
+  color: white;
+  font-weight: inherit;
+}
+.registration-step.class-invite-step .card, .registration-step.class-welcome-step .card {
+  text-align: center;
+}
+.registration-step.class-invite-step .card .contents, .registration-step.class-welcome-step .card .contents {
+  padding: 2rem 0;
+}
+.registration-step.username-step .username-label {
+  margin-bottom: 0.75rem;
+}
+.registration-step.username-step .validation-info {
+  top: auto;
+  left: auto;
+}
+.registration-step.demographics-step .radio {
+  margin: 1.5rem 1.5rem 0 0;
+}
+.registration-step.demographics-step .radio label {
+  font-weight: 300;
+}
+.registration-step.demographics-step input[type=radio] {
+  margin-right: 1rem;
+}
+.registration-step.demographics-step input[type=radio]:focus {
+  transition: all 0.5s ease;
+  border: 1px solid #4d97ff;
+}
+.registration-step.demographics-step .demographics-step-input-other {
+  display: inline-block;
+}
+.registration-step.demographics-step .demographics-step-input-other .col-sm-9 {
+  display: inline-block;
+}
+.registration-step.phone-step .form-group {
+  margin-bottom: 2rem;
+}
+.registration-step.phone-step input[type=checkbox] {
+  margin-bottom: 1.25rem;
+}
+.registration-step.organization-step .checkbox-group .validation-message {
+  transform: translate(16rem, 8rem);
+}
+.registration-step.organization-step input[value="8"] {
+  margin: 1rem 0;
+}
+.registration-step.organization-step .other-input {
+  margin-top: -5.75rem;
+}
+.registration-step.usescratch-step .form-group {
+  margin-bottom: 0;
+}
+.registration-step.usescratch-step .form-group.has-error .textarea {
+  border: 1px solid #ffab1a;
+}
+.registration-step.usescratch-step p.char-count {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+.registration-step.last-step.slide, .registration-step.error-step.slide {
+  max-width: 38.75rem;
+}
+.registration-step.last-step .card, .registration-step.error-step .card {
+  margin: 1rem auto;
+  padding: 1.5rem;
+  width: initial;
+}
+.registration-step.last-step .card h4,
+.registration-step.last-step .card p, .registration-step.error-step .card h4,
+.registration-step.error-step .card p {
+  text-align: left;
+}
+.registration-step.last-step .card p, .registration-step.error-step .card p {
+  margin: 0;
+}
+
+@media only screen and (max-width : 479px) {
+  .registration-step.demographics-step .radio {
+    width: 100%;
+    text-align: left;
+  }
+  .registration-step.last-step .card, .registration-step.error-step .card {
+    margin: 0 auto;
+    width: 18.75rem;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .registration-step .form {
+    text-align: left;
+  }
+  .registration-step.phone-step .checkbox,
+.registration-step.phone-step .validation-message {
+    text-align: left;
+  }
+  .registration-step.phone-step .checkbox {
+    margin-bottom: 1rem;
+  }
+  .registration-step.organization-step .checkbox-group {
+    text-align: left;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .student-registration {
+    text-align: center;
+  }
+
+  .slide {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .student-registration {
+    text-align: center;
+  }
+
+  .slide {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .student-registration {
+    text-align: center;
+  }
+
+  .slide {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .slide {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+html,
+body {
+  background-color: #855cd6;
+}
+
+.student-complete-registration {
+  background-color: #9966ff;
+}

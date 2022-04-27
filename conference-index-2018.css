@@ -1,0 +1,1179 @@
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.button {
+  display: inline-block;
+  margin: 0.5em 0;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #4d97ff;
+  cursor: pointer;
+  padding: 1em 1.25em;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  /* USER BUTTON STATES */
+  /* DATA BUTTON STATES */
+}
+.button:focus {
+  outline: none;
+}
+.button.white {
+  background-color: white;
+  color: #4d97ff;
+}
+.button.pass {
+  background-color: #0fbd8c;
+}
+.button.fail {
+  background-color: #ffab1a;
+}
+.button:disabled {
+  box-shadow: none;
+}
+.button.large {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.75rem 1.25rem 0.8125rem;
+}
+.button.icon-right img {
+  height: 1.25rem;
+  margin-bottom: -0.25rem;
+  margin-left: 0.5rem;
+  margin-right: -0.25rem;
+}
+
+.forms-close-button {
+  padding: 0;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.forms-close-button img {
+  padding-top: 0.5rem;
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-row.column {
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row.uneven {
+  align-items: flex-start;
+}
+.flex-row.uneven .short {
+  width: 13.75em;
+}
+.flex-row.uneven .long {
+  width: 38.75em;
+  text-align: left;
+}
+@media only screen and (max-width : 767px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .flex-row.uneven .short,
+.flex-row.uneven .long {
+    margin: auto;
+    width: 90%;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+#navigation {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  background-color: #4d97ff;
+  width: 100%;
+  /* NOTE: Height should match offset settings in main.scss file */
+  height: 50px;
+}
+#navigation.staging {
+  background-color: #ffab1a;
+}
+.ie9 #navigation {
+  display: table;
+  table-layout: fixed;
+}
+#navigation .inner > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  list-style: none;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.ie9 #navigation .inner > ul {
+  display: table-row;
+}
+#navigation .inner > ul > li {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin: 0;
+  height: 100%;
+  align-self: flex-start;
+}
+#navigation .inner > ul > li.right {
+  float: right;
+  margin-left: auto;
+  align-self: flex-end;
+}
+.ie9 #navigation .inner > ul > li.right {
+  float: none;
+}
+#navigation .inner > ul > li.right a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ie9 #navigation .inner > ul > li {
+  display: table-cell;
+  float: none;
+  height: 50px;
+  vertical-align: bottom;
+}
+#navigation .link > a {
+  display: block;
+  padding: 13px 15px 4px 15px;
+  height: 33px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+#navigation .link > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#navigation .ul.mod-2018,
+#navigation .li-right-ul.mod-2018,
+#navigation .li-left-ul.mod-2018 {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+  list-style-type: none;
+}
+#navigation .li-left-ul.mod-2018 {
+  padding-left: 0;
+}
+#navigation .li-left,
+#navigation .li-right,
+#navigation .link {
+  margin-top: 0;
+  margin-right: 10px;
+  color: white;
+}
+#navigation .logo-a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#navigation .logo-a-image {
+  margin-right: 10px;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  padding-right: 10px;
+  width: 80px;
+}
+#navigation .logo-a-title {
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+@media only screen and (max-width : 479px) {
+  #navigation .li-right-ul.mod-2018 {
+    flex-flow: row nowrap;
+  }
+  #navigation .link {
+    margin: 0;
+    padding: 0;
+  }
+  #navigation .link-a {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width : 767px) {
+  #navigation {
+    height: 100px;
+  }
+  #navigation .ul.mod-2018 {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  #navigation .li-left,
+#navigation .li-right,
+#navigation .link {
+    align-self: center;
+  }
+  #navigation .li-right {
+    margin-left: 0;
+    align-self: center;
+  }
+  #navigation .logo-a {
+    padding-top: 6px;
+  }
+  #navigation .logo-a-image {
+    padding-left: 15px;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+#footer {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  color: #575e75;
+  font-size: 0.85rem;
+}
+/*
+ * Styles for the Row component used by formsy-react-components
+ * Should be imported for each component that extends one of
+ * the formsy-react-components
+ */
+.row .required-symbol {
+  display: none;
+}
+.row label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+.row.no-label label {
+  display: none;
+}
+
+/* allow elements such as validation errors to position relative to this row */
+.row-with-tooltip {
+  position: relative;
+}
+
+.row-label {
+  margin-bottom: 0.75rem;
+  line-height: 1.7rem;
+}
+
+.row-inline {
+  display: flex;
+}
+
+/* override margin-bottom so placing a label next to a radio button does not
+mess up vertical alignment */
+.row-inline label {
+  margin-bottom: 0;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.select label {
+  font-weight: 500;
+}
+.select select {
+  transition: border 0.5s ease;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fafafa url("/svgs/forms/caret.svg") no-repeat right center;
+  padding-right: 4rem;
+  padding-left: 1rem;
+  width: 100%;
+  height: 3rem;
+  color: #575e75;
+  font-size: 0.875rem;
+  appearance: none;
+  -webkit-appearance: none;
+  /* added to fix dropdown appearance on safari */
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select::-ms-value {
+  background-color: inherit;
+  padding-left: 1rem;
+  color: inherit;
+}
+.select select:focus {
+  outline: none;
+  border: 1px solid #4d97ff;
+}
+.select select:-moz-focusring {
+  text-shadow: 0 0 0 #575e75;
+  color: transparent;
+}
+.select select:focus, .select select:hover {
+  background: #fafafa url("/svgs/forms/caret-hover.svg") no-repeat right center;
+}
+.select select > option {
+  background-color: white;
+  width: 100%;
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.language-chooser .select select {
+  width: 13.75rem;
+  /* 3 columns */
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#footer .inner ul {
+  padding-left: 0;
+}
+#footer .inner ul li {
+  list-style-type: none;
+}
+#footer .inner .collaborators {
+  margin-top: 20px;
+  border-bottom: 2px solid #d9d9d9;
+  width: 100%;
+}
+#footer .inner .collaborators ul {
+  margin: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .inner .collaborators ul img {
+  margin: 20px 0;
+  max-width: 180px;
+  max-height: 30px;
+}
+#footer .inner .collaborators .intel img {
+  max-height: 50px;
+}
+#footer .inner .collaborators .siegel img {
+  max-height: 60px;
+}
+#footer .inner .collaborators .cartoon-network img {
+  min-height: 50px;
+}
+#footer .inner .scratch-links {
+  margin-top: 25px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width : 767px) {
+  #footer .inner .scratch-links {
+    align-items: center;
+  }
+}
+#footer .inner .family {
+  width: 28.75em;
+}
+#footer .inner .family .flex-row {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#footer .inner .family .flex-row ul {
+  align-items: flex-start;
+}
+#footer .inner .family .flex-row li {
+  margin: 0;
+}
+#footer .inner .media {
+  width: 18.75em;
+  text-align: center;
+}
+#footer .inner .media .contact-us {
+  text-align: left;
+}
+#footer .inner .media ul {
+  justify-content: flex-start;
+}
+#footer .inner .media li {
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #4d97ff;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+#footer .inner .media li:hover {
+  background-color: #ffab1a;
+}
+#footer .inner .media li img {
+  width: 20px;
+}
+@media only screen and (max-width : 767px) {
+  #footer .inner {
+    text-align: center;
+  }
+  #footer .inner .family {
+    display: none;
+  }
+  #footer .inner .media .contact-us {
+    text-align: center;
+  }
+  #footer .inner .media .flex-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #footer .inner ul li {
+    margin-left: 0;
+  }
+  #footer .inner .collaborators h4 {
+    text-align: center;
+  }
+  #footer .inner .collaborators ul {
+    justify-content: center;
+  }
+  #footer .inner .collaborators ul li {
+    margin: 0 15px;
+  }
+  #footer .inner .collaborators ul img {
+    margin: 20px 0;
+    max-width: 180px;
+    max-height: 30px;
+  }
+  #footer .inner .scratch-links {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #footer .inner .scratch-links .family {
+    width: 28.75em;
+  }
+  #footer .inner .scratch-links .media {
+    width: 10em;
+  }
+}
+#footer .language-chooser {
+  text-align: center;
+}
+#footer .organized-by-message {
+  font-size: 0.875rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0 2.5rem;
+  line-height: 1.5em;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#navigation h1 {
+  font-size: 4.5rem;
+}
+@media only screen and (max-width : 479px) {
+  #navigation h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #navigation h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #navigation h1 {
+    font-size: 3.5rem;
+  }
+}
+
+#view {
+  padding: 0;
+}
+
+.index.mod-2016,
+.plan,
+.expect,
+.schedule {
+  padding: 0 0 20px 0;
+}
+.index.mod-2016 p,
+.plan p,
+.expect p,
+.schedule p {
+  margin: 0.25em 0 1em;
+}
+.index.mod-2016 p.intro,
+.plan p.intro,
+.expect p.intro,
+.schedule p.intro {
+  margin-bottom: 1em;
+}
+.index.mod-2016 ol,
+.index.mod-2016 ul,
+.plan ol,
+.plan ul,
+.expect ol,
+.expect ul,
+.schedule ol,
+.schedule ul {
+  margin: 0.25em 0 1em;
+}
+.index.mod-2016 ol li,
+.index.mod-2016 ul li,
+.plan ol li,
+.plan ul li,
+.expect ol li,
+.expect ul li,
+.schedule ol li,
+.schedule ul li {
+  margin: 0.75em 0;
+}
+@media only screen and (max-width : 767px) {
+  .index.mod-2016,
+.plan,
+.expect,
+.schedule {
+    margin-top: 50px;
+  }
+}
+
+.title-banner.mod-conference {
+  margin-bottom: 0;
+  background-color: #4d97ff;
+  padding: 2rem 0;
+}
+.title-banner.mod-conference h1,
+.title-banner.mod-conference h4,
+.title-banner.mod-conference p {
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+.title-banner.mod-conference h1 {
+  font-size: 4.5rem;
+}
+.title-banner.mod-conference .title-banner-h1.mod-2017 {
+  font-size: 4rem;
+}
+@media only screen and (max-width : 767px) {
+  .title-banner.mod-conference h1,
+.title-banner.mod-conference .title-banner-h1.mod-2017 {
+    font-size: 2.5rem;
+  }
+}
+
+.title-icon {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.title-icon img {
+  width: 125px;
+}
+@media only screen and (max-width : 767px) {
+  .title-icon img {
+    transform: translate(0, 5px);
+    width: 85px;
+  }
+}
+
+section {
+  padding: 64px 0;
+}
+
+@media only screen and (max-width : 479px) {
+  #view {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.title-banner {
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+  margin-bottom: 40px;
+  background-color: #0fbd8c;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.title-banner-h1,
+.title-banner-p {
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+
+.title-banner-p {
+  max-width: 500px;
+}
+
+.title-banner-strong {
+  font-weight: 700;
+}
+
+.title-banner.mod-blue-bg {
+  background-color: #4d97ff;
+}
+.title-banner.mod-blue-bg a {
+  color: white;
+}
+.title-banner.mod-blue-bg a.mod-underline {
+  text-decoration: underline;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#view {
+  background-color: #fafafa;
+  min-height: initial;
+}
+
+.index .title-banner {
+  margin-bottom: 0;
+  background-image: url("/images/conference/index/2018/title-banner.jpg");
+  background-position: top;
+  padding: 48px 0;
+}
+.index .title-banner h1,
+.index .title-banner h3,
+.index .title-banner h4,
+.index .title-banner p {
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+.index .title-banner h1 {
+  font-size: 4rem;
+}
+.index .title-banner h3 a {
+  text-decoration: underline;
+  color: white;
+}
+.index .title-banner p {
+  margin-top: 1rem;
+}
+.index .title-banner p.sub-button {
+  margin-top: 1rem;
+}
+.index .title-banner p b {
+  margin-top: 2rem;
+}
+.index .title-banner p b a {
+  text-decoration: underline;
+  color: white;
+}
+.index .title-banner p a button {
+  background-color: white;
+  color: #4d97ff;
+  font-size: 1rem;
+}
+@media only screen and (max-width : 479px) {
+  .index .title-banner h3 {
+    display: none;
+    margin-top: 0;
+  }
+  .index .title-banner p {
+    margin-top: 0.25rem;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .index .title-banner h1 {
+    font-size: 2.5rem;
+  }
+  .index .title-banner p {
+    margin-top: 1.5rem;
+  }
+}
+.index .flex-row {
+  align-items: flex-start;
+}
+.index .flex-row div {
+  width: 28%;
+  text-align: center;
+}
+.index .flex-row div img {
+  display: block;
+  margin: auto;
+  max-width: 125px;
+}
+@media only screen and (max-width : 767px) {
+  .index .flex-row div {
+    margin: 0.5rem;
+    width: 125px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .index .flex-row {
+    align-items: center;
+  }
+}

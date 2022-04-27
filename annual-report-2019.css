@@ -1,0 +1,4582 @@
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.button {
+  display: inline-block;
+  margin: 0.5em 0;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #4d97ff;
+  cursor: pointer;
+  padding: 1em 1.25em;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  /* USER BUTTON STATES */
+  /* DATA BUTTON STATES */
+}
+.button:focus {
+  outline: none;
+}
+.button.white {
+  background-color: white;
+  color: #4d97ff;
+}
+.button.pass {
+  background-color: #0fbd8c;
+}
+.button.fail {
+  background-color: #ffab1a;
+}
+.button:disabled {
+  box-shadow: none;
+}
+.button.large {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.75rem 1.25rem 0.8125rem;
+}
+.button.icon-right img {
+  height: 1.25rem;
+  margin-bottom: -0.25rem;
+  margin-left: 0.5rem;
+  margin-right: -0.25rem;
+}
+
+.forms-close-button {
+  padding: 0;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.forms-close-button img {
+  padding-top: 0.5rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.row label {
+  font-weight: 500;
+}
+
+.input {
+  transition: all 0.5s ease;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 0 1rem;
+  height: 3rem;
+  color: #575e75;
+  font-size: 0.875rem;
+  /* IE10/11-specific style resets */
+}
+.input:focus {
+  transition: all 0.5s ease;
+  outline: none;
+  border: 1px solid #4d97ff;
+}
+.input.fail {
+  border: 1px solid #ffab1a;
+}
+.input.pass {
+  border: 1px solid #0fbd8c;
+}
+.input::-ms-reveal, .input::-ms-clear {
+  display: none;
+}
+/*
+ * Styles for the Row component used by formsy-react-components
+ * Should be imported for each component that extends one of
+ * the formsy-react-components
+ */
+.row .required-symbol {
+  display: none;
+}
+.row label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+.row.no-label label {
+  display: none;
+}
+
+/* allow elements such as validation errors to position relative to this row */
+.row-with-tooltip {
+  position: relative;
+}
+
+.row-label {
+  margin-bottom: 0.75rem;
+  line-height: 1.7rem;
+}
+
+.row-inline {
+  display: flex;
+}
+
+/* override margin-bottom so placing a label next to a radio button does not
+mess up vertical alignment */
+.row-inline label {
+  margin-bottom: 0;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 5px 5px;
+  background-color: #4d97ff;
+  padding: 10px;
+  min-width: 9rem;
+  max-width: 16.25rem;
+  overflow: visible;
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: normal;
+}
+.dropdown.staging {
+  background-color: #ffab1a;
+}
+.dropdown.open {
+  display: block;
+}
+.dropdown a:link, .dropdown a:visited, .dropdown a:active {
+  background-color: transparent;
+  color: white;
+}
+.dropdown input {
+  margin-bottom: 12px;
+  width: calc(100% - 30px);
+}
+.dropdown label {
+  display: block;
+  margin-bottom: 5px;
+}
+.dropdown > li {
+  display: block;
+  line-height: 30px;
+}
+.dropdown > li.divider {
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown > li a {
+  display: block;
+  padding: 0 10px;
+}
+.dropdown > li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+.dropdown.with-arrow {
+  margin-top: 14px;
+  border-radius: 5px;
+  overflow: visible;
+}
+.dropdown.with-arrow:before {
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: 10%;
+  transform: rotate(45deg);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #4d97ff;
+  width: 14px;
+  height: 14px;
+  content: "";
+}
+.studio-status-icon-spinner {
+  /* This class can be used on an icon that should spin.
+  It first plays the intro animation, then spins forever. */
+  animation-name: intro, spin;
+  animation-duration: 0.25s, 1s;
+  animation-timing-function: cubic-bezier(0.3, -3, 0.6, 3), cubic-bezier(0.4, 0.1, 0.4, 1);
+  animation-delay: 0s, 0.25s;
+  animation-iteration-count: 1, infinite;
+  animation-direction: normal;
+  width: 1.4rem;
+  /* standard is 1.4 rem but can be overwritten by parent */
+  height: 1.4rem;
+  transform-origin: center;
+}
+
+@keyframes intro {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-row.column {
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-row.uneven {
+  align-items: flex-start;
+}
+.flex-row.uneven .short {
+  width: 13.75em;
+}
+.flex-row.uneven .long {
+  width: 38.75em;
+  text-align: left;
+}
+@media only screen and (max-width : 767px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .flex-row.uneven .short,
+.flex-row.uneven .long {
+    margin: auto;
+    width: 90%;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.login {
+  padding: 10px;
+  width: 200px;
+  line-height: 1.5rem;
+  white-space: normal;
+  color: white;
+  font-size: 0.8125rem;
+}
+.login .button {
+  padding: 0.75em;
+}
+.login .row {
+  margin-bottom: 1.25rem;
+}
+.login .input {
+  margin-bottom: 12px;
+  width: calc(100% - 30px);
+  height: 2.25rem;
+}
+.login label {
+  padding-top: 5px;
+  font-weight: bold;
+}
+.login .spinner {
+  margin: 0 0.8rem;
+  width: 1rem;
+  vertical-align: middle;
+}
+.login .submit-row {
+  justify-content: space-between;
+  flex-direction: row;
+}
+.login .submit-button {
+  margin-top: 5px;
+}
+.login a {
+  margin: auto 0;
+  color: white;
+}
+.login a:link, .login a:visited, .login a:active {
+  color: white;
+}
+.login a:hover {
+  background-color: transparent;
+}
+.login .error {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ffab1a;
+  padding: 0.75em 1em;
+}
+
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.overflow-hidden {
+  /* to avoid double scroll bars this
+  gets added to body while modal is open */
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  margin: 3.75rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  background-color: white;
+  padding: 0;
+  width: 48.75rem;
+}
+.modal-content:focus {
+  outline: none;
+}
+@media only screen and (max-width : 941px) {
+  .modal-content {
+    margin-top: 0;
+    width: 100%;
+    overflow: auto;
+  }
+}
+@media only screen and (max-width : 479px), only screen and (max-height : 479px) {
+  .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 510;
+  background-color: rgba(77, 151, 255, 0.7);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.modal-content-close-img {
+  padding-top: 0.5rem;
+}
+
+/* Close button, Submit button, etc. */
+.action-buttons {
+  display: flex;
+  margin: 1.125rem 0.8275rem 0.9375rem 0.8275rem;
+  line-height: 1.5rem;
+  justify-content: flex-end !important;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width : 941px) {
+  .action-buttons {
+    justify-content: center !important;
+    flex-direction: row !important;
+  }
+}
+
+/* setting overall modal to contain overflow looks good, but isn't
+compatible with elements (like validation popups) that need to bleed
+past modal boundary. This class can be used to force modal button
+row to appear to contain overflow. */
+.action-buttons-overflow-fix {
+  margin-bottom: 0.9375rem;
+}
+
+/* For action button row where left/right margin is handled by parent element */
+.action-buttons.action-buttons-no-inset {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.action-button {
+  margin: 0 0 0 0.54625rem;
+  border-radius: 0.25rem;
+  padding: 6px 1.25rem 14px 1.25rem;
+  height: 36px;
+}
+
+.action-button.close-button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.action-button-text {
+  display: flex;
+}
+
+.action-button.disabled {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.error-text {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffab1a;
+  padding: 1rem;
+  min-height: 1rem;
+  overflow: visible;
+  color: white;
+}
+
+.modal-sizes * {
+  box-sizing: border-box;
+}
+
+.modal-sizes {
+  margin: 100px auto;
+  outline: none;
+  padding: 0;
+  max-width: 36.25rem;
+  /* 580px; */
+  user-select: none;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px), only screen and (min-height : 480px) and (max-height : 767px) {
+  .modal-sizes {
+    margin: 40px auto;
+  }
+}
+@media only screen and (max-width : 479px), only screen and (max-height : 479px) {
+  .modal-sizes {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+.modal-sizes .modal-header {
+  padding-top: 0.75rem;
+  width: 100%;
+  height: 3rem;
+}
+@media only screen and (max-width : 479px), only screen and (max-height : 479px) {
+  .modal-sizes .modal-header {
+    border-radius: 0;
+  }
+}
+.modal-sizes .modal-content {
+  font-size: 0.875rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+#navigation {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  background-color: #4d97ff;
+  width: 100%;
+  /* NOTE: Height should match offset settings in main.scss file */
+  height: 50px;
+}
+#navigation.staging {
+  background-color: #ffab1a;
+}
+.ie9 #navigation {
+  display: table;
+  table-layout: fixed;
+}
+#navigation .inner > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  list-style: none;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.ie9 #navigation .inner > ul {
+  display: table-row;
+}
+#navigation .inner > ul > li {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin: 0;
+  height: 100%;
+  align-self: flex-start;
+}
+#navigation .inner > ul > li.right {
+  float: right;
+  margin-left: auto;
+  align-self: flex-end;
+}
+.ie9 #navigation .inner > ul > li.right {
+  float: none;
+}
+#navigation .inner > ul > li.right a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ie9 #navigation .inner > ul > li {
+  display: table-cell;
+  float: none;
+  height: 50px;
+  vertical-align: bottom;
+}
+#navigation .link > a {
+  display: block;
+  padding: 13px 15px 4px 15px;
+  height: 33px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+#navigation .link > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.modal-content-iframe {
+  border: 0;
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.modal-content.mod-registration {
+  width: 38.125rem;
+  overflow: hidden;
+}
+
+.modal-content-iframe.mod-registration {
+  width: 38.125rem;
+  min-height: 27.375rem;
+}
+
+.modal-content.recaptcha-open {
+  min-height: 500px;
+}
+
+.modal-content-iframe.recaptcha-open {
+  min-height: 500px;
+}
+
+@media only screen and (max-width : 941px) {
+  .modal-content.mod-registration {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .modal-content-iframe.mod-registration {
+    height: 27.375rem;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.account-nav .user-info {
+  display: inline-block;
+  padding: 14px 15px 4px 15px;
+  max-width: 260px;
+  height: 33px;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: normal;
+}
+.account-nav .user-info .avatar {
+  margin-right: 10px;
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.account-nav .user-info:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.account-nav .user-info.open {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.account-nav .user-info:after {
+  display: inline-block;
+  margin-left: 8px;
+  background-image: url("/images/dropdown.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  content: " ";
+}
+.account-nav .dropdown {
+  top: 50px;
+  padding: 0;
+  padding-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width : 479px) {
+  .account-nav {
+    margin-left: 0;
+  }
+  .account-nav .user-info .avatar {
+    margin-right: 0;
+  }
+  .account-nav .user-info:after {
+    display: none;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .account-nav {
+    margin-left: 0;
+  }
+  .account-nav .user-info .avatar {
+    margin-right: 0;
+  }
+  .account-nav .user-info:after {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .account-nav {
+    margin-left: 0;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#navigation.staging .messages .message-count {
+  display: none;
+}
+#navigation.staging .messages .message-count.show {
+  background-color: #4d97ff;
+}
+#navigation .logo {
+  margin-right: 10px;
+}
+#navigation .logo a {
+  display: block;
+  transition: 0.15s ease all;
+  margin: 0 6px 0 0;
+  border: 0;
+  background-image: url("/images/logo_sm.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 95%;
+  width: 81px;
+  height: 50px;
+}
+#navigation .logo a:hover {
+  transition: 0.15s ease all;
+  background-size: 100%;
+}
+#navigation .inner > ul > li.search {
+  margin: 0 20px;
+  border-right: 0;
+  color: white;
+  flex-grow: 3;
+}
+.ie9 #navigation .inner > ul > li.search {
+  width: 100%;
+}
+#navigation .inner > ul > li.search .form {
+  margin: 0;
+}
+#navigation .inner > ul > li.search .row .help-block {
+  display: none;
+}
+#navigation .inner > ul > li.search .input,
+#navigation .inner > ul > li.search .button {
+  display: inline-block;
+  margin-top: 5px;
+  outline: none;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 14px;
+}
+#navigation .inner > ul > li.search .input[type=text],
+#navigation .inner > ul > li.search .button[type=text] {
+  transition: 0.15s ease background-color;
+  padding: 0;
+  padding-right: 10px;
+  padding-left: 40px;
+  width: calc(100% - 50px);
+  height: 40px;
+  color: white;
+  font-size: 0.85em;
+}
+#navigation .inner > ul > li.search .input[type=text]::placeholder,
+#navigation .inner > ul > li.search .button[type=text]::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+#navigation .inner > ul > li.search .input[type=text]:focus,
+#navigation .inner > ul > li.search .button[type=text]:focus {
+  transition: 0.15s ease background-color;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.ie9 #navigation .inner > ul > li.search .input[type=text],
+.ie9 #navigation .inner > ul > li.search .button[type=text] {
+  width: 70px;
+}
+#navigation .inner > ul > li.search .btn-search {
+  position: absolute;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: url("/images/nav-search-glass.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 14px 14px;
+  width: 40px;
+  height: 40px;
+}
+#navigation .inner > ul > li.search .btn-search:hover {
+  box-shadow: none;
+}
+#navigation .messages > a,
+#navigation .mystuff > a {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 45%;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 30px;
+  overflow: hidden;
+  text-indent: 50px;
+  white-space: nowrap;
+}
+#navigation .messages > a:hover,
+#navigation .mystuff > a:hover {
+  background-size: 50%;
+}
+#navigation .messages > a {
+  background-image: url("/images/nav-notifications.png");
+}
+#navigation .messages .message-count {
+  display: none;
+}
+#navigation .messages .message-count.show {
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.25rem;
+  border-radius: 1rem;
+  background-color: #ffab1a;
+  padding: 0 0.25rem;
+  text-indent: 0;
+  line-height: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+#navigation .mystuff > a {
+  background-image: url("/images/mystuff.png");
+}
+
+@media only screen and (max-width : 479px) {
+  #navigation .inner {
+    width: 18.75em;
+  }
+  #navigation .inner > ul > li.login-item {
+    margin-left: 0;
+  }
+  #navigation .inner .create,
+#navigation .inner .discuss,
+#navigation .inner .explore,
+#navigation .inner .search,
+#navigation .inner .help,
+#navigation .inner .mystuff,
+#navigation .inner .profile-name {
+    display: none;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #navigation .inner {
+    width: 28.75em;
+  }
+  #navigation .inner > ul > li.login-item {
+    margin-left: 0;
+  }
+  #navigation .inner .discuss,
+#navigation .inner .explore,
+#navigation .inner .search,
+#navigation .inner .mystuff,
+#navigation .inner .profile-name {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #navigation .inner {
+    width: 38.75em;
+  }
+  #navigation .inner > ul > li.login-item {
+    margin-left: 0;
+  }
+  #navigation .inner .explore,
+#navigation .inner .search,
+#navigation .inner .mystuff {
+    display: none;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+#footer {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  color: #575e75;
+  font-size: 0.85rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.select label {
+  font-weight: 500;
+}
+.select select {
+  transition: border 0.5s ease;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fafafa url("/svgs/forms/caret.svg") no-repeat right center;
+  padding-right: 4rem;
+  padding-left: 1rem;
+  width: 100%;
+  height: 3rem;
+  color: #575e75;
+  font-size: 0.875rem;
+  appearance: none;
+  -webkit-appearance: none;
+  /* added to fix dropdown appearance on safari */
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select::-ms-value {
+  background-color: inherit;
+  padding-left: 1rem;
+  color: inherit;
+}
+.select select:focus {
+  outline: none;
+  border: 1px solid #4d97ff;
+}
+.select select:-moz-focusring {
+  text-shadow: 0 0 0 #575e75;
+  color: transparent;
+}
+.select select:focus, .select select:hover {
+  background: #fafafa url("/svgs/forms/caret-hover.svg") no-repeat right center;
+}
+.select select > option {
+  background-color: white;
+  width: 100%;
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.language-chooser .select select {
+  width: 13.75rem;
+  /* 3 columns */
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#footer .lists {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#footer .lists dl {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-size: 0.8rem;
+}
+#footer .lists dt {
+  display: block;
+  margin-bottom: 8px;
+}
+#footer .lists dd {
+  display: block;
+  margin: 5px 0;
+  line-height: 1.2rem;
+}
+#footer .lists dd a {
+  font-weight: 400;
+}
+#footer .copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#footer .copyright p {
+  font-size: 0.7rem;
+}
+#footer .language-chooser {
+  text-align: center;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#donor {
+  color: #575e75;
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  background-color: #f2f2f2;
+  padding-bottom: 2.5rem;
+  padding-top: 1rem;
+}
+#donor #donor-text {
+  text-align: center;
+  width: 58.75em;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 942px) {
+  #donor #donor-text {
+    width: 53.75em;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #donor #donor-text {
+    width: 28.75em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #donor #donor-text {
+    width: 18.75em;
+  }
+}
+.crash-container {
+  /* UI Primary Colors */
+  /* #FF661A */
+  /* UI Secondary Colors */
+  /* 3.0 colors */
+  /* Using www naming convention for now, should be consistent with gui */
+  /* #CF63CF Sounds Primary */
+  /* modals */
+  /* Overlay UI Gray Colors */
+  /* Typography Colors */
+  /* Down Deep */
+  /*
+      Frameless           <http://framelessgrid.com/>
+      by Joni Korpi       <http://jonikorpi.com/>
+      licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+  */
+  /* Media Queries */
+  /* Width */
+  /*
+  * ... small | medium     | intermediate | big ...
+  * ... medium-and-smaller |
+  *          ... intermediate-and-smaller |
+  */
+  /* Height */
+  margin: 3rem auto;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  width: 60%;
+  overflow: hidden;
+  text-align: center;
+}
+@media only screen and (max-width : 479px) {
+  .crash-container #view {
+    text-align: center;
+  }
+  .crash-container .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .crash-container #view {
+    text-align: center;
+  }
+  .crash-container .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .crash-container #view {
+    text-align: center;
+  }
+  .crash-container .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .crash-container .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.crash-container img {
+  width: 100%;
+}
+.crash-container .crash-message {
+  margin: 2rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.thumbnail .thumbnail-image {
+  display: block;
+}
+.thumbnail .thumbnail-image img {
+  margin-bottom: 2px;
+  border: 1px solid #d9d9d9;
+}
+.thumbnail .thumbnail-title,
+.thumbnail .thumbnail-creator, .thumbnail .thumbnail-loves, .thumbnail .thumbnail-favorites, .thumbnail .thumbnail-remixes, .thumbnail .thumbnail-views {
+  line-height: 1.2em;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+.thumbnail .thumbnail-title {
+  margin-bottom: 1px;
+  font-size: 0.923em;
+  font-weight: 800;
+}
+.thumbnail .thumbnail-title a {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.thumbnail .thumbnail-creator, .thumbnail .thumbnail-loves, .thumbnail .thumbnail-favorites, .thumbnail .thumbnail-remixes, .thumbnail .thumbnail-views {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #575e75;
+  font-size: 0.8462em;
+}
+.thumbnail .thumbnail-creator a, .thumbnail .thumbnail-loves a, .thumbnail .thumbnail-favorites a, .thumbnail .thumbnail-remixes a, .thumbnail .thumbnail-views a {
+  display: inline;
+}
+.thumbnail .thumbnail-loves,
+.thumbnail .thumbnail-favorites,
+.thumbnail .thumbnail-remixes,
+.thumbnail .thumbnail-views {
+  display: inline;
+  margin-right: 10px;
+}
+.thumbnail .thumbnail-loves:before,
+.thumbnail .thumbnail-favorites:before,
+.thumbnail .thumbnail-remixes:before,
+.thumbnail .thumbnail-views:before {
+  display: inline-block;
+  margin-right: 0.1rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 0.93rem;
+  height: 0.93rem;
+  vertical-align: text-top;
+  content: "";
+}
+.thumbnail .thumbnail-loves:before {
+  background-image: url("/svgs/love/love_type-gray.svg");
+}
+.thumbnail .thumbnail-favorites:before {
+  background-image: url("/svgs/favorite/favorite_type-gray.svg");
+}
+.thumbnail .thumbnail-remixes:before {
+  background-image: url("/svgs/remix/remix_type-gray.svg");
+}
+.thumbnail .thumbnail-views:before {
+  background-image: url("/svgs/view/view_type-gray.svg");
+}
+.thumbnail.project {
+  width: 144px;
+}
+.thumbnail.project .thumbnail-image img {
+  width: 144px;
+  height: 108px;
+}
+.thumbnail.gallery {
+  width: 170px;
+}
+.thumbnail.gallery img {
+  width: 170px;
+  height: 100px;
+}
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.grid {
+  display: inline-block;
+  width: 100%;
+}
+.grid .flex-row {
+  margin: 0 auto;
+  padding: 12px 0;
+  width: 58.75em;
+  justify-content: flex-start;
+}
+.grid .thumbnail {
+  margin: 7px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding-bottom: 4px;
+  width: 220px;
+}
+.grid .thumbnail .thumbnail-image {
+  margin: 8px auto;
+  width: 204px;
+}
+.grid .thumbnail .thumbnail-info {
+  margin: 0 auto;
+  width: 204px;
+}
+.grid .thumbnail .thumbnail-info .creator-image {
+  float: left;
+}
+.grid .thumbnail .thumbnail-info .creator-image img {
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+}
+.grid .thumbnail .thumbnail-info .thumbnail-title {
+  float: left;
+  max-width: 164px;
+  text-align: left;
+}
+.grid .thumbnail .thumbnail-info .thumbnail-title .thumbnail-creator a {
+  color: #575e75;
+}
+.grid .thumbnail.project {
+  height: 208px;
+}
+.grid .thumbnail.project .thumbnail-image {
+  height: 152px;
+}
+.grid .thumbnail.project .thumbnail-image img {
+  margin: 0 auto;
+  border: 0;
+  border-radius: 4px;
+  width: 204px;
+  height: 152px;
+}
+.grid .thumbnail.gallery {
+  height: 164px;
+}
+.grid .thumbnail.gallery .thumbnail-image {
+  height: 120px;
+}
+.grid .thumbnail.gallery .thumbnail-image img {
+  border: 0;
+  border-radius: 4px;
+  width: 204px;
+  height: 120px;
+}
+.grid .thumbnail.gallery .thumbnail-info .thumbnail-title {
+  max-width: 204px;
+}
+.grid.column {
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width : 479px) {
+  .grid .flex-row {
+    width: 18.75em;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .grid .flex-row {
+    width: 28.75em;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .grid .flex-row {
+    width: 43.75em;
+  }
+}
+.emoji {
+  max-width: 24px;
+  vertical-align: middle;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+.comment-text {
+  position: relative;
+  border: 1px solid #d9d9d9;
+  border-radius: 0 5px 5px 5px;
+  padding: 1rem;
+}
+
+.comment-text:before {
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -13px;
+  border-bottom: 12px solid #d9d9d9;
+  border-left: 13px solid #d9d9d9;
+  border-radius: 0 0 0 13px;
+  width: 0;
+  content: "";
+}
+
+.comment-text:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  border-bottom: 10px solid white;
+  border-left: 12px solid white;
+  border-radius: 0 0 0 12px;
+  width: 0;
+  content: "";
+}
+
+.emoji-text.mod-comment {
+  margin: 0;
+  overflow: hidden;
+}
+
+.comment-text-timestamp {
+  margin: 1rem 0 0;
+  color: #b3b3b3;
+  font-size: 0.8rem;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.avatar-grid {
+  display: flex;
+  margin: 0 auto;
+  max-width: 864px;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.avatar-item {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 32px;
+  text-align: center;
+  line-height: 1.25rem;
+}
+.avatar-item img {
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+}
+.avatar-item .avatar-text {
+  display: inline-block;
+  width: 144px;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+.video-player {
+  border: 0.25rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.75rem;
+  height: 225px;
+  overflow: hidden;
+}
+.video-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-preview .video-player {
+  height: auto;
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.video-thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-thumbnail img {
+  cursor: pointer;
+}
+.video-thumbnail .button {
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.hidden-spinner {
+  visibility: hidden;
+}
+
+.spinner-video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.iframe-video-not-started {
+  visibility: hidden;
+}
+
+.iframe-video-started {
+  visibility: visible;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+#view {
+  background-color: white;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 6.125rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h5 {
+  text-transform: none;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  letter-spacing: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2em;
+}
+
+.photo-credit {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width : 479px) {
+  .inner {
+    width: 18.75em;
+  }
+
+  h1 {
+    font-size: 3.25rem;
+    line-height: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+.message-section {
+  background-color: #4d97ff;
+}
+.message-section h1, .message-section h2, .message-section p {
+  color: white;
+}
+@media only screen and (max-width : 941px) {
+  .message-section {
+    padding: 0px;
+  }
+  .message-section .inner {
+    width: 100%;
+  }
+}
+
+.masthead p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+@media only screen and (min-width : 942px) {
+  .masthead .masthead-content {
+    max-width: 440px;
+    text-align: left;
+  }
+  .masthead img {
+    max-width: 760px;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .masthead {
+    flex-direction: column;
+    align-items: center;
+  }
+  .masthead .masthead-year {
+    text-align: center;
+  }
+  .masthead .masthead-content {
+    text-align: center;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .masthead .masthead-content, .masthead img {
+    max-width: 620px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .masthead .masthead-content, .masthead img {
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .masthead .masthead-content, .masthead img {
+    max-width: 300px;
+  }
+}
+
+.wave-icon-desktop {
+  margin-left: 56px;
+}
+
+.message-content {
+  align-items: flex-start;
+}
+@media only screen and (min-width : 942px) {
+  .message-content h2 {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .message-content {
+    align-items: center;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 941px) {
+  .message-content {
+    text-align: left;
+  }
+  .message-content h2 {
+    max-width: 460px;
+    vertical-align: middle;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .message-content p {
+    text-align: left;
+  }
+  .message-content h2 {
+    max-width: 300px;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+.message-content .wave-icon-and-title {
+  display: flex;
+  justify-content: center;
+}
+.message-content .wave-icon-and-title img {
+  margin-right: 20px;
+}
+@media only screen and (max-width : 767px) {
+  .message-content .wave-icon-and-title {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .message-content .wave-icon-and-title {
+    max-width: 460px;
+  }
+}
+.message-content .message-from-team {
+  max-width: 620px;
+}
+.message-content .message-from-team .message-signature {
+  font-weight: bold;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .message-content .message-from-team {
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .message-content .message-from-team {
+    max-width: 300px;
+  }
+}
+.message-content .team-photo {
+  margin: 8px 24px 8px 0px;
+  vertical-align: middle;
+  max-width: 620px;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .message-content .team-photo {
+    max-width: 460px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .message-content .team-photo {
+    max-width: 300px;
+    margin-right: 0px;
+  }
+}
+
+.transition-images {
+  display: flex;
+  justify-content: space-between;
+}
+.transition-images img {
+  margin-bottom: -140px;
+}
+@media only screen and (max-width : 479px) {
+  .transition-images img {
+    width: 100px;
+    margin-bottom: -64px;
+  }
+}
+
+.covid-response-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 124px 0px;
+}
+.covid-response-section h2 {
+  margin-bottom: 44px;
+}
+.covid-response-section p {
+  width: 620px;
+}
+@media only screen and (max-width : 941px) {
+  .covid-response-section {
+    text-align: left;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .covid-response-section p {
+    width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .covid-response-section p {
+    width: 300px;
+  }
+}
+
+.mission-section {
+  background-color: rgba(77, 151, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mission-section .mission-subtitle {
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+@media only screen and (max-width : 941px) {
+  .mission-section {
+    text-align: left;
+  }
+}
+.mission-section .inner {
+  padding-top: 124px;
+  width: 620px;
+}
+.mission-section .four-ps {
+  margin: 56px 0 124px 0;
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .mission-section .four-ps {
+    margin-top: 96px 0 108px 0;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .mission-section .four-ps {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .mission-section .four-ps {
+    margin-top: 76px;
+    align-items: center;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .mission-section .inner, .mission-section .four-ps {
+    width: 620px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .mission-section .inner, .mission-section .four-ps {
+    width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .mission-section .inner, .mission-section .four-ps {
+    width: 300px;
+  }
+}
+.mission-section .one-p {
+  width: 460px;
+  height: 493px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+.mission-section .one-p img {
+  width: 460px;
+}
+.mission-section .one-p.top {
+  margin-top: 0px;
+}
+@media only screen and (max-width : 941px) {
+  .mission-section .one-p {
+    padding: 0;
+    width: 300px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .mission-section .one-p img {
+    width: 300px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .mission-section .one-p {
+    height: 370px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .mission-section .one-p {
+    margin-top: 62px;
+    height: 398px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .mission-section .one-p {
+    margin-right: 0;
+  }
+}
+.mission-section .one-p .title-and-description {
+  width: 300px;
+  margin: 16px auto 0 auto;
+}
+.mission-section .one-p .title-and-description p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-top: 16px;
+}
+.mission-section .one-p .title-and-description .no-margin-bottom {
+  margin-bottom: 0;
+}
+@media only screen and (max-width : 941px) {
+  .mission-section .one-p .title-and-description {
+    text-align: center;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .mission-section .one-p .title-and-description {
+    margin: 0 auto;
+  }
+  .mission-section .one-p .title-and-description p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .mission-section .one-p .title-and-description p {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .mission-section .one-p .title-and-description p {
+    margin-top: 5px;
+  }
+}
+.mission-section .small-p {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 268px;
+}
+.mission-section .small-p img {
+  margin: 34px 0;
+}
+.mission-section .four-ps-projects {
+  background-image: url("/images/annual-report/mission/Projects Splash.svg");
+}
+.mission-section .four-ps-passion {
+  background-image: url("/images/annual-report/mission/Passion Splash.svg");
+  margin-top: 112px;
+  margin-right: 0;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .mission-section .four-ps-passion {
+    margin-top: 96px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .mission-section .four-ps-passion {
+    margin-top: 0;
+  }
+}
+.mission-section .four-ps-peers {
+  background-image: url("/images/annual-report/mission/Peers Splash.svg");
+  margin-top: -80px;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .mission-section .four-ps-peers {
+    margin-top: -72px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .mission-section .four-ps-peers {
+    margin-top: 0;
+  }
+}
+.mission-section .four-ps-play {
+  background-image: url("/images/annual-report/mission/Play Splash.svg");
+  margin-right: 0;
+  margin-top: 32px;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .mission-section .four-ps-play {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .mission-section .four-ps-play {
+    margin-top: 0;
+  }
+}
+
+.milestones-section {
+  background-color: rgba(77, 151, 255, 0.1);
+  padding-bottom: 120px;
+}
+.milestones-section .inner {
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.milestones-section h2, .milestones-section h4 p {
+  color: #575e75;
+}
+.milestones-section p {
+  font-size: 1.25rem;
+}
+.milestones-section .milestones-wrapper {
+  display: flex;
+}
+.milestones-section .milestones-wrapper .left {
+  margin-left: auto;
+}
+.milestones-section .milestones-wrapper .right {
+  margin-right: auto;
+}
+@media only screen and (max-width : 941px) {
+  .milestones-section .milestones-wrapper {
+    flex-direction: column;
+  }
+  .milestones-section .milestones-wrapper .left, .milestones-section .milestones-wrapper .right {
+    margin: auto;
+  }
+}
+.milestones-section .milestones-column {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 460px;
+}
+.milestones-section .milestones-column .milestones-description {
+  width: 360px;
+}
+.milestones-section .milestones-column .single-image {
+  flex-grow: 3;
+  align-self: center;
+  justify-self: center;
+  max-width: 460px;
+}
+@media only screen and (max-width : 941px) {
+  .milestones-section .milestones-column {
+    align-items: center;
+  }
+  .milestones-section .milestones-column .milestones-description {
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .milestones-section .milestones-column {
+    width: 300px;
+  }
+}
+.milestones-section .milestone-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.milestones-section .milestone-box.first {
+  margin-top: 4px;
+}
+.milestones-section .milestone-box.last {
+  margin-bottom: 4px;
+}
+.milestones-section .milestone-box img {
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+@media only screen and (max-width : 941px) {
+  .milestones-section .milestone-box h4, .milestones-section .milestone-box p {
+    text-align: left;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .milestones-section .milestone-box img {
+    height: 160px;
+  }
+}
+
+.reach-section {
+  position: relative;
+  background-color: #0fbd8c;
+  color: white;
+}
+.reach-section .transition-images {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  margin-top: -180px;
+  position: absolute;
+}
+.reach-section .transition-images .left-image {
+  align-self: center;
+  height: 270px;
+}
+.reach-section .transition-images .cropped-image {
+  width: 260px;
+}
+.reach-section .inner {
+  max-width: 940px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reach-section h2, .reach-section h3, .reach-section h4, .reach-section p {
+  color: white;
+}
+.reach-section .reach-intro {
+  max-width: 620px;
+  text-align: center;
+}
+.reach-section .reach-intro p {
+  font-size: 1.5rem;
+}
+.reach-section .reach-intro img {
+  margin-top: 20px;
+}
+.reach-section .reach-intro .reach-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.reach-section .reach-growth {
+  max-width: 940px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 76px;
+}
+.reach-section .reach-growth .growth-blurb {
+  max-width: 300px;
+  margin: 20px;
+}
+.reach-section .reach-growth img {
+  width: 600px;
+}
+@media only screen and (max-width : 941px) {
+  .reach-section .reach-growth img {
+    max-width: 100%;
+  }
+}
+.reach-section .map-inner {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.reach-section .reach-map {
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  color: #575e75;
+  padding-top: 48px;
+  margin-top: 52px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reach-section .reach-map h3, .reach-section .reach-map p {
+  color: #575e75;
+  padding: 0 48px;
+}
+@media only screen and (max-width : 941px) {
+  .reach-section .reach-map {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+.reach-section .reach-map .map-key {
+  font-size: 0.75rem;
+  margin-bottom: 36px;
+}
+.reach-section .reach-map .map-key .map-scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.reach-section .reach-map .map-key .map-scale img {
+  padding: 4px 8px;
+}
+@media only screen and (max-width : 479px) {
+  .reach-section .reach-map .map-key .map-scale img {
+    width: 240px;
+  }
+}
+.reach-section .reach-map .map-wrapper {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 50%;
+}
+.reach-section .reach-map .map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.reach-section .reach-translation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 780px;
+  margin-bottom: 100px;
+}
+.reach-section .reach-translation .reach-translation-intro {
+  max-width: 300px;
+}
+.reach-section .reach-translation .reach-translation-intro h3 {
+  max-width: 280px;
+}
+.reach-section .reach-translation img {
+  max-width: 380px;
+}
+@media only screen and (max-width : 479px) {
+  .reach-section .reach-translation {
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .reach-section .inner {
+    max-width: 620px;
+  }
+  .reach-section .reach-translation {
+    text-align: left;
+  }
+  .reach-section .reach-translation img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .reach-section .reach-translation {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.reach-datapoint {
+  font-size: 5rem;
+  font-weight: bold;
+  width: 220px;
+  text-align: center;
+  margin: 32px 0;
+}
+.reach-datapoint .million {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width : 479px) {
+  .reach-datapoint {
+    font-size: 2.75rem;
+    width: 140px;
+  }
+  .reach-datapoint .million {
+    font-size: 1.5rem;
+  }
+  .reach-datapoint h4 {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+}
+
+.reach-section .scratch-jr-transition-img {
+  position: absolute;
+  margin-top: -44px;
+  margin-left: 88px;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .reach-section .scratch-jr-transition-img {
+    margin-left: 32px;
+  }
+}
+
+.reach-scratch-jr .scratch-jr-transition-img {
+  margin-bottom: -156px;
+  margin-right: 48px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .reach-scratch-jr .scratch-jr-transition-img {
+    margin-right: 12px;
+  }
+}
+
+.reach-scratch-jr {
+  background-color: #0EA57A;
+  color: white;
+  padding: 100px 0;
+}
+.reach-scratch-jr h2, .reach-scratch-jr h3, .reach-scratch-jr h4, .reach-scratch-jr p {
+  color: white;
+}
+.reach-scratch-jr .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 940px;
+}
+.reach-scratch-jr .scratch-jr-intro {
+  max-width: 540px;
+}
+.reach-scratch-jr .scratch-jr-intro p {
+  font-size: 1.25rem;
+}
+@media only screen and (max-width : 941px) {
+  .reach-scratch-jr .inner {
+    max-width: 620px;
+  }
+  .reach-scratch-jr .scratch-jr-intro {
+    text-align: left;
+    width: 300px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .reach-scratch-jr .inner {
+    justify-content: center;
+  }
+  .reach-scratch-jr .scratch-jr-intro {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .reach-scratch-jr {
+    padding: 84px 0 52px 0;
+  }
+}
+
+.initiatives-section .initiatives-intro .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  padding: 88px 0;
+}
+.initiatives-section .initiatives-intro p {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.initiatives-section .initiatives-intro .initiatives-pillars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.initiatives-section .initiatives-intro .initiatives-pillars h4 {
+  color: white;
+  word-break: break-word;
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .pillar-splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .pillar-splash.tools {
+  background-image: url("/images/annual-report/initiatives/Creative Tools-Splash.svg");
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .pillar-splash.community {
+  background-image: url("/images/annual-report/initiatives/Community-Splash.svg");
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .pillar-splash.schools {
+  background-image: url("/images/annual-report/initiatives/Schools-Splash.svg");
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .pillar-splash.equity {
+  background-image: url("/images/annual-report/initiatives/Equity-Splash.svg");
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .pillar-splash.global {
+  background-image: url("/images/annual-report/initiatives/Global-Splash.svg");
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .three-pillars {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .equity-and-global {
+  width: 100%;
+}
+.initiatives-section .initiatives-intro .initiatives-pillars .equity-and-global .pillar-splash {
+  margin: 24px 0;
+}
+@media only screen and (min-width : 942px) {
+  .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
+    width: 244px;
+    height: 160px;
+  }
+  .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
+    height: 64px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-intro .inner {
+    max-width: 620px;
+  }
+  .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
+    width: 192px;
+    height: 128px;
+  }
+  .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
+    height: 44px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-intro .inner {
+    max-width: 460px;
+  }
+  .initiatives-section .initiatives-intro h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
+    width: 136px;
+    height: 148px;
+  }
+  .initiatives-section .initiatives-intro .three-pillars .pillar-splash.community {
+    width: 164px;
+  }
+  .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
+    height: 44px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-intro .inner {
+    max-width: 300px;
+  }
+  .initiatives-section .initiatives-intro h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
+    width: 90px;
+    height: 96px;
+  }
+  .initiatives-section .initiatives-intro .three-pillars .pillar-splash.community {
+    width: 108px;
+  }
+  .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
+    height: 44px;
+  }
+}
+.initiatives-section .initiatives-subsection-header {
+  background-image: url("/images/annual-report/initiatives/Juice Pattern.svg");
+  padding: 92px 0;
+}
+.initiatives-section .initiatives-subsection-header.tools {
+  background-color: #0fbd8c;
+  background-position: 50% 0%;
+}
+.initiatives-section .initiatives-subsection-header.community {
+  background-color: #4d97ff;
+  background-position: 50% 50%;
+}
+.initiatives-section .initiatives-subsection-header.schools {
+  background-color: #9966ff;
+  background-position: 50% 100%;
+}
+.initiatives-section .initiatives-subsection-header .inner {
+  max-width: 780px;
+  text-align: center;
+}
+.initiatives-section .initiatives-subsection-header .inner h2, .initiatives-section .initiatives-subsection-header .inner p {
+  color: white;
+}
+.initiatives-section .initiatives-subsection-header .inner p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-header .inner {
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-header .inner {
+    max-width: 300px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width : 942px) {
+  .initiatives-section .initiatives-subsection-content .inner {
+    max-width: 940px;
+    padding: 72px 0;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner {
+    padding-top: 72px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner {
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner {
+    max-width: 300px;
+    padding-top: 32px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.abhi {
+  padding-top: 0;
+  padding-bottom: 132px;
+}
+.initiatives-section .initiatives-subsection-content .inner.schools {
+  align-items: flex-start;
+  text-align: left;
+  padding-bottom: 0px;
+}
+.initiatives-section .initiatives-subsection-content .inner.schools .subsection-tag {
+  background-color: #9966ff;
+}
+@media only screen and (min-width : 942px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools {
+    max-width: 620px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools {
+    max-width: 620px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools {
+    padding-top: 32px;
+    align-items: flex-start;
+  }
+  .initiatives-section .initiatives-subsection-content .inner.schools h2 {
+    line-height: 2.5rem;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.four-pictures-container {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container {
+    max-width: 760px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.four-pictures-container .four-pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.initiatives-section .initiatives-subsection-content .inner.four-pictures-container .four-pictures img {
+  width: 380px;
+  margin: 10px;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .four-pictures img {
+    width: 300px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .four-pictures img {
+    width: 220px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .four-pictures img {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pencils-img {
+  position: absolute;
+  width: 145px;
+  padding: 0px;
+  left: 0px;
+  top: 60px;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pencils-img {
+    width: 80px;
+    top: 0px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pencils-img img {
+    width: 80px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pencils-img {
+    width: 80px;
+    top: 0px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pencils-img img {
+    width: 80px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pizza-img {
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pizza-img {
+    width: 80px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pizza-img img {
+    width: 80px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pizza-img {
+    width: 80px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner.four-pictures-container .pizza-img img {
+    width: 80px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences {
+  align-items: flex-start;
+  text-align: left;
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences.bottom {
+  padding-top: 0px;
+}
+@media only screen and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences.bottom {
+    padding-top: 32px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences {
+    max-width: 620px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences {
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences {
+    max-width: 300px;
+    align-items: center;
+  }
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences h2 {
+    line-height: 2.5rem;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .subsection-tag {
+  background-color: #9966ff;
+  margin-bottom: 24px;
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-header {
+  max-width: 620px;
+  margin-bottom: 20px;
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+}
+@media only screen and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-intro p {
+  width: 380px;
+  margin-top: 0px;
+  margin-right: 20px;
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-intro p {
+    margin: 0px 0px 20px 0px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-intro p {
+    width: 620px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-intro p {
+    width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-intro p {
+    width: 300px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content {
+  align-self: center;
+  max-width: 780px;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content {
+    width: 620px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content {
+    width: 460px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content {
+    width: 300px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region.europe {
+    flex-direction: column-reverse;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region .conference-image-and-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region .conference-image-and-caption img {
+  width: 300px;
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region .conference-image-and-caption {
+    margin-bottom: 32px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region .conference-title-and-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 460px;
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region .conference-title-and-description {
+    width: 300px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner.schools-conferences .schools-conferences-content .schools-conferences-region .left {
+  margin-right: 20px;
+}
+.initiatives-section .initiatives-subsection-content .conferences-hero-and-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 540px;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .conferences-hero-and-caption img {
+    width: 460px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .conferences-hero-and-caption span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .conferences-hero-and-caption span {
+    width: 300px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .conferences-hero-and-caption .conferences-hero {
+  background-image: url("/images/annual-report/initiatives/schools/Conferences Story/Scratch Conferences Hero.png");
+  overflow: hidden;
+  background-position: center center;
+  height: 320px;
+  width: 100%;
+}
+.initiatives-section .initiatives-subsection-content .teacher-quote {
+  width: 620px;
+  text-align: left;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .teacher-quote {
+    width: 460px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .teacher-quote {
+    width: 100%;
+    padding: 0px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .teacher-quote .quote-person img {
+  height: auto;
+}
+.initiatives-section .initiatives-subsection-content .teacher-quote .comment-text {
+  background-color: #9966ff;
+  opacity: 75%;
+  white-space: pre-line;
+  margin-top: 8px;
+}
+.initiatives-section .initiatives-subsection-content .teacher-quote .comment-text p {
+  color: white;
+  line-height: 40px;
+  font-size: 1.25rem;
+}
+.initiatives-section .initiatives-subsection-content .teacher-quote .comment-text, .initiatives-section .initiatives-subsection-content .teacher-quote .comment-text::before, .initiatives-section .initiatives-subsection-content .teacher-quote .comment-text::after {
+  border-color: #9966ff;
+}
+.initiatives-section .initiatives-subsection-content .teacher-quote .comment-text {
+  padding: 1.75rem;
+}
+.initiatives-section .initiatives-subsection-content .extending-reach {
+  margin: 40px 0px;
+}
+.initiatives-section .initiatives-subsection-content .news-links {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0px;
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .news-links {
+    flex-direction: column;
+  }
+}
+.initiatives-section .initiatives-subsection-content .news-links .icon-and-link {
+  display: flex;
+  align-items: center;
+  margin-right: 3.75em;
+}
+.initiatives-section .initiatives-subsection-content .news-links .icon-and-link img {
+  margin-right: 5px;
+}
+.initiatives-section .initiatives-subsection-intro {
+  max-width: 780px;
+  text-align: center;
+  margin: 32px 0;
+}
+.initiatives-section .initiatives-subsection-intro p {
+  max-width: 620px;
+}
+.initiatives-section .initiatives-subsection-intro.schools {
+  text-align: left;
+  max-width: 620px;
+}
+.initiatives-section .quote-person {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-left: -16px;
+}
+.initiatives-section .quote-person img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.initiatives-section .initiatives-tools .hero {
+  display: flex;
+  justify-content: space-between;
+}
+.initiatives-section .initiatives-tools .hero .right {
+  width: 58%;
+  max-width: 740px;
+}
+.initiatives-section .initiatives-tools .hero .left {
+  width: 42%;
+  max-width: 520px;
+}
+.initiatives-section .initiatives-tools .subsection-tag {
+  background-color: #0fbd8c;
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-tools .subsection-tag {
+    max-width: 250px;
+  }
+}
+.initiatives-section .initiatives-tools .subsection-tag.collaborator {
+  color: #575e75;
+  background-color: rgba(77, 151, 255, 0.1);
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+.initiatives-section .initiatives-tools .tools-extensions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.initiatives-section .initiatives-tools .tools-extension {
+  width: 380px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-tools .tools-extension img {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-tools .tools-extension img {
+    max-width: 300px;
+  }
+}
+.initiatives-section .initiatives-tools .tools-stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+.initiatives-section .initiatives-tools .tools-stats .tools-stat {
+  width: 160px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.initiatives-section .initiatives-tools .tools-stats .tools-stat a {
+  font-weight: normal;
+}
+.initiatives-section .initiatives-tools .tools-LEGO, .initiatives-section .initiatives-tools .tools-app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 780px;
+  margin-top: 80px;
+}
+.initiatives-section .initiatives-tools .tools-LEGO img, .initiatives-section .initiatives-tools .tools-app img {
+  width: 380px;
+}
+.initiatives-section .initiatives-tools .tools-LEGO .tools-LEGO-info, .initiatives-section .initiatives-tools .tools-LEGO .tools-app-info, .initiatives-section .initiatives-tools .tools-app .tools-LEGO-info, .initiatives-section .initiatives-tools .tools-app .tools-app-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 380px;
+}
+.initiatives-section .initiatives-tools .tools-LEGO .tools-LEGO-info h4, .initiatives-section .initiatives-tools .tools-LEGO .tools-LEGO-info p, .initiatives-section .initiatives-tools .tools-LEGO .tools-app-info h4, .initiatives-section .initiatives-tools .tools-LEGO .tools-app-info p, .initiatives-section .initiatives-tools .tools-app .tools-LEGO-info h4, .initiatives-section .initiatives-tools .tools-app .tools-LEGO-info p, .initiatives-section .initiatives-tools .tools-app .tools-app-info h4, .initiatives-section .initiatives-tools .tools-app .tools-app-info p {
+  margin-bottom: 28px;
+}
+.initiatives-section .initiatives-tools .tools-app {
+  margin-top: 0px;
+  margin-bottom: 124px;
+}
+.initiatives-section .initiatives-tools .tools-tutorials {
+  width: 760px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0;
+}
+.initiatives-section .initiatives-tools .tools-tutorials p {
+  max-width: 620px;
+}
+.initiatives-section .initiatives-tools .tools-tutorials .tutorial-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 32px 0;
+}
+.initiatives-section .initiatives-tools .tools-tutorials .tutorial-list img {
+  border-radius: 8px;
+}
+@media only screen and (min-width : 942px) {
+  .initiatives-section .initiatives-tools .tools-tutorials .tutorial-list img {
+    width: 180px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-tools .tools-tutorials .tutorial-list img {
+    width: 140px;
+    height: 76px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .initiatives-section .initiatives-tools .tools-tutorials .tutorial-list img {
+    width: 220px;
+    height: 120px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-tools .tools-tutorials .tutorial-list img {
+    width: 140px;
+    height: 76px;
+  }
+}
+.initiatives-section .initiatives-tools .tools-tutorials .tools-stats {
+  justify-content: center;
+}
+.initiatives-section .initiatives-tools .tools-tutorials .tools-stats .tools-stat {
+  margin: 0px 10px;
+}
+.initiatives-section .initiatives-tools .tools-abhi .tools-abhi-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+.initiatives-section .initiatives-tools .tools-abhi .tools-abhi-intro div {
+  max-width: 436px;
+}
+.initiatives-section .initiatives-tools .tools-abhi .tools-abhi-intro p {
+  margin-bottom: 0;
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-tools .tools-abhi .subsection-tag {
+    margin-left: -10px;
+  }
+}
+.initiatives-section .initiatives-tools .abhi-quote {
+  width: 620px;
+}
+.initiatives-section .initiatives-tools .abhi-quote .comment-text {
+  background-color: #0fbd8c;
+  white-space: pre-line;
+  margin-top: 8px;
+}
+.initiatives-section .initiatives-tools .abhi-quote .comment-text p {
+  color: white;
+  line-height: 40px;
+  font-size: 1.25rem;
+}
+.initiatives-section .initiatives-tools .abhi-quote .comment-text, .initiatives-section .initiatives-tools .abhi-quote .comment-text::before, .initiatives-section .initiatives-tools .abhi-quote .comment-text::after {
+  border-color: #0fbd8c;
+}
+.initiatives-section .initiatives-tools .abhi-quote .comment-text {
+  padding: 1.75rem;
+}
+@media only screen and (max-width : 941px) {
+  .initiatives-section .initiatives-tools .tools-LEGO-info h4, .initiatives-section .initiatives-tools .tools-LEGO-info p, .initiatives-section .initiatives-tools .tools-app-info h4, .initiatives-section .initiatives-tools .tools-app-info p {
+    text-align: left;
+  }
+  .initiatives-section .initiatives-tools .tools-extension {
+    width: 300px;
+  }
+  .initiatives-section .initiatives-tools .tools-extension .tools-stat {
+    width: 140px;
+  }
+  .initiatives-section .initiatives-tools .tools-tutorials {
+    width: 620px;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi {
+    max-width: 620px;
+    align-items: center;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi .tools-abhi-intro {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi .tools-abhi-intro img {
+    order: -1;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi .tools-abhi-intro div {
+    max-width: 100%;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi .emoji-text {
+    text-align: left;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-tools .inner {
+    max-width: 460px;
+  }
+  .initiatives-section .initiatives-tools .tools-extensions {
+    width: 100%;
+    justify-content: center;
+  }
+  .initiatives-section .initiatives-tools .tools-extensions .tools-extension {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .initiatives-section .initiatives-tools .tools-extensions .tools-extension .tools-stats {
+    justify-content: space-around;
+  }
+  .initiatives-section .initiatives-tools .tools-LEGO, .initiatives-section .initiatives-tools .tools-app {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .initiatives-section .initiatives-tools .tools-LEGO .tools-LEGO-info, .initiatives-section .initiatives-tools .tools-LEGO .tools-app-info, .initiatives-section .initiatives-tools .tools-app .tools-LEGO-info, .initiatives-section .initiatives-tools .tools-app .tools-app-info {
+    width: 100%;
+  }
+  .initiatives-section .initiatives-tools .tools-LEGO h4, .initiatives-section .initiatives-tools .tools-LEGO p, .initiatives-section .initiatives-tools .tools-app h4, .initiatives-section .initiatives-tools .tools-app p {
+    text-align: center;
+  }
+  .initiatives-section .initiatives-tools .tools-LEGO h4, .initiatives-section .initiatives-tools .tools-app h4 {
+    margin: 36px 0;
+  }
+  .initiatives-section .initiatives-tools .tools-LEGO img, .initiatives-section .initiatives-tools .tools-app img {
+    width: 300px;
+    order: -1;
+  }
+  .initiatives-section .initiatives-tools .tools-LEGO .subsection-tag, .initiatives-section .initiatives-tools .tools-app .subsection-tag {
+    align-self: center;
+  }
+  .initiatives-section .initiatives-tools .tools-tutorials {
+    width: 100%;
+  }
+  .initiatives-section .initiatives-tools .tools-tutorials .tutorial-list {
+    justify-content: center;
+  }
+  .initiatives-section .initiatives-tools .tools-tutorials .tutorial-list img {
+    margin: 8px;
+  }
+  .initiatives-section .initiatives-tools .tools-tutorials .tools-stats {
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi h2 {
+    margin-top: 28px;
+  }
+  .initiatives-section .initiatives-tools .abhi-quote {
+    width: 460px;
+  }
+  .initiatives-section .initiatives-tools .emoji-text {
+    text-align: left;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-tools .tools-abhi-intro {
+    width: 100%;
+    text-align: left;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi-intro img {
+    width: 100%;
+  }
+  .initiatives-section .initiatives-tools .tools-abhi-intro h2 {
+    line-height: 2.5rem;
+  }
+  .initiatives-section .initiatives-tools .abhi-quote {
+    width: 100%;
+    padding: 0;
+  }
+}
+.initiatives-section .initiatives-community .community-hero-img {
+  width: 100%;
+  height: 545px;
+  margin: 52px 0;
+  background-image: url("/images/annual-report/initiatives/community-hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-community .community-hero-img {
+    height: 330px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-community .community-hero-img {
+    height: 244px;
+  }
+}
+.initiatives-section .initiatives-community .moderation-and-guidelines {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.initiatives-section .initiatives-community .community-moderation {
+  width: 380px;
+  margin-right: 80px;
+}
+.initiatives-section .initiatives-community .community-guidelines {
+  width: 460px;
+}
+.initiatives-section .initiatives-community .community-guidelines p {
+  font-size: 1.25rem;
+}
+.initiatives-section .initiatives-community .guidelines-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.initiatives-section .initiatives-community .guidelines-list ul {
+  list-style-image: url("/images/annual-report/initiatives/guideline-splash.svg");
+  margin-right: 36px;
+  padding: 0 24px;
+}
+.initiatives-section .initiatives-community .community-engagement {
+  max-width: 620px;
+  text-align: center;
+  margin: 48px;
+}
+.initiatives-section .initiatives-community .community-sds {
+  text-align: center;
+  margin-bottom: 68px;
+}
+.initiatives-section .initiatives-community .community-sds .sds-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.initiatives-section .initiatives-community .community-sds .sds-list .sds-tile {
+  width: 200px;
+  text-align: center;
+  margin: 8px;
+}
+.initiatives-section .initiatives-community .community-sds .sds-list .sds-tile img {
+  width: 100%;
+  border-radius: 8px;
+}
+.initiatives-section .initiatives-community .community-sds .sds-list .sds-tile p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.initiatives-section .initiatives-community .quotes-tag, .initiatives-section .initiatives-community .blm-tag {
+  align-self: flex-start;
+}
+.initiatives-section .initiatives-community .community-quotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 144px;
+}
+.initiatives-section .initiatives-community .community-quotes .community-quote {
+  width: 380px;
+  margin: 24px;
+}
+.initiatives-section .initiatives-community .community-quotes .community-quote .comment-text {
+  background-color: #4d97ff;
+  white-space: pre-line;
+  margin-top: 8px;
+}
+.initiatives-section .initiatives-community .community-quotes .community-quote .comment-text p {
+  color: white;
+  line-height: 40px;
+  font-size: 1.25rem;
+}
+.initiatives-section .initiatives-community .community-quotes .community-quote .comment-text, .initiatives-section .initiatives-community .community-quotes .community-quote .comment-text::before, .initiatives-section .initiatives-community .community-quotes .community-quote .comment-text::after {
+  border-color: #4d97ff;
+}
+.initiatives-section .initiatives-community .community-quotes .community-quote .comment-text {
+  padding: 1.75rem;
+}
+.initiatives-section .initiatives-community .community-blm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.initiatives-section .initiatives-community .community-blm h2 {
+  margin-top: 32px;
+}
+.initiatives-section .initiatives-community .community-blm .blm-intro {
+  max-width: 460px;
+}
+.initiatives-section .initiatives-community .community-blm .blm-image {
+  max-width: 380px;
+  text-align: center;
+}
+.initiatives-section .initiatives-community .community-blm .blm-image span {
+  margin-top: 1rem;
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-community .community-blm .blm-image img {
+    width: 300px;
+  }
+}
+.initiatives-section .initiatives-community .community-blm .blm-projects .flex-row {
+  max-width: 500px;
+  flex-wrap: true;
+}
+.initiatives-section .initiatives-community .community-blm .blm-projects .grid .thumbnail {
+  box-shadow: none;
+}
+.initiatives-section .initiatives-community .community-blm .grid .thumbail {
+  box-shadow: none;
+  background-color: blue;
+}
+.initiatives-section .initiatives-community .community-blm .blm-change {
+  width: 380px;
+}
+.initiatives-section .initiatives-community .community-blm .blm-change p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-community .community-moderation, .initiatives-section .initiatives-community .community-guidelines, .initiatives-section .initiatives-community .community-engagement {
+    width: 620px;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .initiatives-section .initiatives-community .inner {
+    max-width: 620px;
+  }
+  .initiatives-section .initiatives-community .moderation-and-guidelines {
+    flex-direction: column;
+  }
+  .initiatives-section .initiatives-community .community-moderation, .initiatives-section .initiatives-community .community-guidelines, .initiatives-section .initiatives-community .community-engagement {
+    margin: 32px 0;
+    text-align: left;
+  }
+  .initiatives-section .initiatives-community .sds-list {
+    max-width: 460px;
+  }
+  .initiatives-section .initiatives-community .community-quotes .community-quote {
+    width: 100%;
+    text-align: left;
+    margin: 24px 0;
+  }
+  .initiatives-section .initiatives-community .community-quotes .community-quote .comment-text {
+    margin-left: 12px;
+  }
+  .initiatives-section .initiatives-community .blm-tag {
+    align-self: center;
+  }
+  .initiatives-section .initiatives-community .community-blm {
+    margin: 16px 0;
+    justify-content: center;
+  }
+  .initiatives-section .initiatives-community .community-blm .blm-image {
+    order: -1;
+  }
+  .initiatives-section .initiatives-community .community-blm .blm-intro, .initiatives-section .initiatives-community .community-blm .blm-change {
+    max-width: 100%;
+    width: 100%;
+  }
+  .initiatives-section .initiatives-community .community-blm .blm-change {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-community .inner {
+    overflow: hidden;
+  }
+  .initiatives-section .initiatives-community .hero {
+    width: 540px;
+  }
+  .initiatives-section .initiatives-community .community-moderation, .initiatives-section .initiatives-community .community-guidelines, .initiatives-section .initiatives-community .community-engagement {
+    width: 300px;
+    text-align: left;
+  }
+  .initiatives-section .initiatives-community ul {
+    margin: 0;
+    padding-left: 24px;
+  }
+  .initiatives-section .initiatives-community li {
+    margin-bottom: 0;
+  }
+}
+.initiatives-section .video-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.initiatives-section .video-background {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.initiatives-section .video-background.blm {
+  background-image: url("/images/annual-report/initiatives/BLM Video Splash.svg");
+}
+.initiatives-section .video-background.abhi {
+  background-image: url("/images/annual-report/initiatives/Abhi Video Splash.svg");
+}
+.initiatives-section .video-background.abhi .button {
+  background-color: #0fbd8c;
+}
+.initiatives-section .video-background.cps {
+  background-image: url("/images/annual-report/initiatives/schools/CPS Story/CPS Video Splash.svg");
+}
+.initiatives-section .video-background.cps .button {
+  background-color: #9966ff;
+}
+
+.financials-section {
+  background-color: #575e75;
+  width: 100%;
+  color: white;
+}
+.financials-section .inner {
+  max-width: 780px;
+  padding: 80px 0;
+}
+.financials-section h2, .financials-section p {
+  color: white;
+}
+.financials-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.financials-section h2, .financials-section h3, .financials-section .financials-future {
+  text-align: center;
+}
+.financials-section .financials-future {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 54px;
+}
+.financials-section .financials-button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.financials-section .financials-button {
+  background-color: white;
+  color: #4d97ff;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 48px 0 28px 0;
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.financials-section .financials-button img {
+  height: 1.75rem;
+  padding-left: 1.2rem;
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+@media only screen and (max-width : 941px) {
+  .financials-section .inner {
+    max-width: 620px;
+    padding: 72px 0;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .financials-section .inner {
+    max-width: 460px;
+    padding: 64px 0;
+  }
+  .financials-section .financials-future {
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .financials-section .inner {
+    max-width: 300px;
+    width: 100%;
+  }
+  .financials-section h2, .financials-section h3, .financials-section .financials-future {
+    text-align: center;
+  }
+  .financials-section .financials-button {
+    font-size: 1.125rem;
+  }
+}
+
+.subsection-tag {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #4d97ff;
+  text-align: center;
+  border-radius: 36px;
+  display: inline-flex;
+  width: max-content;
+  padding: 12px 36px;
+}
+
+.supporters-section {
+  background-color: rgba(77, 151, 255, 0.1);
+  padding: 104px 0 52px 0;
+}
+.supporters-section .inner {
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.supporters-section .subsection-tag {
+  align-self: flex-start;
+}
+.supporters-section h3, .supporters-section h4 {
+  margin-bottom: 20px;
+}
+.supporters-section ul {
+  padding: 0;
+}
+.supporters-section li {
+  list-style: none;
+}
+.supporters-section .supporters-heading {
+  margin-bottom: 68px;
+}
+.supporters-section .supporters-heading h2 {
+  padding-bottom: 24px;
+}
+.supporters-section .supporters-heading p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+.supporters-section .subsection-tag {
+  background-color: #ffab1a;
+}
+.supporters-section .supporters-subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-top: 48px;
+  width: 620px;
+}
+.supporters-section .supporters-subsection h2 {
+  font-size: 1.5rem;
+}
+.supporters-section .supporters-subsection p {
+  font-size: 16px;
+}
+.supporters-section .founding-partners-blurb {
+  font-style: italic;
+}
+.supporters-section .david-siegel {
+  display: flex;
+  align-items: flex-start;
+  margin: 32px 0px 52px 0px;
+}
+.supporters-section .david-siegel .ds-info {
+  display: flex;
+  line-height: 24px;
+}
+.supporters-section .david-siegel img {
+  width: 140px;
+}
+.supporters-section .david-siegel .ds-text {
+  width: 144px;
+}
+.supporters-section .comment-text {
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+}
+.supporters-section .comment-text p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+.supporters-section .supporters-level {
+  width: 100%;
+  margin: 24px 0;
+}
+.supporters-section .supporters-level hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+.supporters-section .supporters-level .supporters-list {
+  display: flex;
+}
+.supporters-section .supporters-level .supporters-list-side {
+  margin: 0 1.25rem 0 0;
+  width: 300px;
+}
+.supporters-section .supporters-level .supporters-list-side li {
+  margin: 0 0 0.75rem 0;
+  padding: 0 auto;
+  overflow: wrap;
+}
+@media only screen and (min-width : 942px) {
+  .supporters-section .ds-info {
+    flex-direction: column;
+    text-align: center;
+    width: 144px;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width : 941px) {
+  .supporters-section .inner {
+    max-width: 620px;
+  }
+  .supporters-section .subsection-tag {
+    align-self: center;
+  }
+  .supporters-section .supporters-subsection {
+    text-align: left;
+    width: 460px;
+  }
+  .supporters-section .supporters-subsection.supporters-lists {
+    width: 100%;
+  }
+  .supporters-section .david-siegel {
+    width: 460px;
+  }
+  .supporters-section .ds-info {
+    width: 460px;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .supporters-section .ds-info img {
+    margin-right: 20px;
+  }
+  .supporters-section .david-siegel {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .supporters-section .supporters-subsection {
+    margin: 0;
+  }
+  .supporters-section .supporters-heading {
+    margin-bottom: 28px;
+  }
+  .supporters-section .subsection-tag {
+    margin-bottom: 48px;
+  }
+  .supporters-section .supporters-list-side {
+    width: 220px;
+  }
+  .supporters-section .ds-info {
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .supporters-section .supporters-subsection {
+    width: 100%;
+  }
+  .supporters-section .david-siegel {
+    width: 100%;
+  }
+  .supporters-section .supporters-list {
+    flex-direction: column;
+    align-content: flex-start;
+  }
+}
+
+.leadership-section {
+  background-color: rgba(77, 151, 255, 0.1);
+}
+.leadership-section .inner {
+  padding: 76px 0;
+}
+.leadership-section h2, .leadership-section h3, .leadership-section h4 {
+  text-align: center;
+}
+.leadership-section h2 {
+  margin-bottom: 84px;
+}
+.leadership-section .leadership-board {
+  justify-content: center;
+  margin-bottom: 96px;
+}
+.leadership-section .leadership-board .board-member {
+  text-align: center;
+  width: 300px;
+  margin-top: 44px;
+  line-height: 1.5rem;
+}
+.leadership-section .leadership-board h4 {
+  padding: 12px 0 16px 0;
+}
+.leadership-section .leadership-scratch-team {
+  margin-top: 128px;
+}
+.leadership-section .leadership-scratch-team .avatar-item img {
+  background-color: rgba(77, 151, 255, 0.1);
+}
+.leadership-section .leadership-scratch-team .avatar-item .avatar-text {
+  width: 140px;
+}
+.leadership-section .executive-director {
+  text-align: center;
+  padding: 72px;
+}
+.leadership-section .executive-director .avatar-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px 0 20px 0;
+}
+.leadership-section .executive-director .avatar-item {
+  padding-bottom: 0px;
+}
+
+.donate-section {
+  background-color: #0fbd8c;
+}
+.donate-section .donate-info {
+  justify-content: center;
+  align-items: flex-start;
+  padding: 84px 0px;
+}
+.donate-section .donate-info img {
+  width: 300px;
+  height: 300px;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .donate-section .donate-info img {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .donate-section .donate-info {
+    align-items: center;
+  }
+}
+.donate-section .donate-content {
+  margin-left: 20px;
+  width: 460px;
+}
+.donate-section .donate-content h2, .donate-section .donate-content p {
+  color: white;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .donate-section .donate-content {
+    text-align: left;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .donate-section .donate-content {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .donate-section .donate-content {
+    width: 300px;
+  }
+}
+.donate-section .donate-button {
+  background-color: white;
+  color: #4d97ff;
+  height: 66px;
+  width: 176px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 6px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+.donate-section .donate-button a {
+  color: #4d97ff;
+}
+.donate-section .donate-button span {
+  vertical-align: middle;
+}
+
+.subnavigation {
+  position: fixed;
+  top: 50px;
+  z-index: 9;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  background-color: #4280d7;
+  padding: 0;
+  width: 100%;
+  height: 58px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.subnavigation .flex-row {
+  height: 100%;
+}
+.subnavigation a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+  font-size: 0.85rem;
+}
+.subnavigation a.selectedItem, .subnavigation a:hover {
+  border-bottom: 1px solid white;
+}
+.subnavigation .sectionIndicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+}
+.subnavigation .sectionIndicator p {
+  color: white;
+  font-weight: bold;
+}
+.subnavigation .sectionIndicator .dropdown-button {
+  background: none;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+.subnavigation .sectionIndicator .dropdown-button .rotated {
+  transform: rotate(180deg);
+}
+.subnavigation .sectionIndicator img {
+  margin: 0;
+  padding: 0;
+}
+.subnavigation hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 0;
+}
+@media only screen and (max-width : 767px) {
+  .subnavigation {
+    height: auto;
+  }
+  .subnavigation .flex-row {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+  }
+  .subnavigation a {
+    padding: 10px;
+    margin: 5px 10px 5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  .subnavigation a.selectedItem, .subnavigation a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+}
+
+.annual-report-content, #footer {
+  position: relative;
+  top: 58px;
+}
