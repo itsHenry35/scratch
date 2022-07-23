@@ -10,9 +10,9 @@
         "name": "annual-report",
         "pattern": "^/annual-report/?(\\?.*)?$",
         "routeAlias": "/annual-report/?$",
-        "view": "annual-report/2020/annual-report",
-        "title": "Annual Report 2020",
-        "intlName": "annual-report-2020",
+        "view": "annual-report/2021/annual-report",
+        "title": "Annual Report 2021",
+        "intlName": "annual-report-2021",
         "viewportWidth": "device-width"
     },
     {
@@ -50,7 +50,7 @@
         "name": "conference-index",
         "pattern": "^/conference/?(\\?.*)?$",
         "routeAlias": "/conference(?!/20[1-2][0-9])",
-        "redirect": "/conference/2022"
+        "redirect": "https://www.scratchfoundation.org/scratch-conference"
     },
     {
         "name": "conference-index-2017",
@@ -122,9 +122,7 @@
         "name": "conference-index-2022",
         "pattern": "^/conference/2022/?$",
         "routeAlias": "/conference(?!/20[1-2][0-9])",
-        "view": "conference/2022/index/index",
-        "title": "Scratch Conferences",
-        "viewportWidth": "device-width"
+        "redirect": "https://www.scratchfoundation.org/scratch-conference"
     },
     {
         "name": "connect",
