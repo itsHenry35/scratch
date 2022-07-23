@@ -217,7 +217,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([41,"common"]);
+/******/ 	deferredModules.push([40,"common"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -766,7 +766,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ 41:
+/***/ 40:
 /*!*********************************************************************************!*\
   !*** multi ./src/init.js ./src/views/become-a-scratcher/become-a-scratcher.jsx ***!
   \*********************************************************************************/

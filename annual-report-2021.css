@@ -1987,6 +1987,9 @@ row to appear to contain overflow. */
   font-size: 1rem;
   text-align: left;
 }
+.text-and-media-snippet p.p-big {
+  font-size: 1.125rem;
+}
 @media only screen and (max-width : 941px) {
   .text-and-media-snippet p {
     text-align: center;
@@ -2053,10 +2056,10 @@ row to appear to contain overflow. */
 }
 .timeline-card {
   max-width: 460px;
+  z-index: 2;
   background-color: white;
   border-radius: 8px;
   position: relative;
-  z-index: 1;
   margin-bottom: 30px;
 }
 @media only screen and (max-width : 479px) {
@@ -2074,8 +2077,8 @@ row to appear to contain overflow. */
 }
 .timeline-card .timeline-content a {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 12px;
+  top: 1px;
 }
 .timeline-card .timeline-content img {
   margin-top: 10px;
@@ -2206,6 +2209,78 @@ row to appear to contain overflow. */
 /* Overlay UI Gray Colors */
 /* Typography Colors */
 /* Down Deep */
+.bubble {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 8px 36px;
+  font-size: 1rem;
+  margin: 15px auto;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubble img {
+  margin: 0px 8px;
+  width: 30px;
+  height: 30px;
+}
+.bubble.increase span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubble.increase span:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/annual-report/2020/Symbols-UI/Arrow_up.svg");
+  background-size: contain;
+  display: inline-block;
+  margin-right: 10px;
+}
+.bubble.spotlight:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/annual-report/2020/Symbols-UI/LightBulb_spotlightstory.svg");
+  background-size: contain;
+  display: inline-block;
+  margin-right: 10px;
+}
+.bubble.snapshot:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/annual-report/2020/Symbols-UI/Camera_snapshots.svg");
+  background-size: contain;
+  display: inline-block;
+  margin-right: 10px;
+}
+.bubble.darken {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.bubble.blue {
+  background-color: #3373cc;
+}
+.bubble.purple {
+  background-color: #855cd6;
+}
+.bubble.green {
+  background-color: #2B732B;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
 /*
     Frameless           <http://framelessgrid.com/>
     by Joni Korpi       <http://jonikorpi.com/>
@@ -2255,8 +2330,129 @@ row to appear to contain overflow. */
     width: 942px;
   }
 }
-.access .button {
+.video-player {
+  border: 0.25rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.75rem;
+  height: 225px;
+  overflow: hidden;
+}
+.video-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-preview .video-player {
+  height: auto;
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.video-thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-thumbnail img {
+  cursor: pointer;
+}
+.video-thumbnail .button {
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.hidden-spinner {
+  visibility: hidden;
+}
+
+.spinner-video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.iframe-video-not-started {
+  visibility: hidden;
+}
+
+.iframe-video-started {
+  visibility: visible;
+}
+/* UI Primary Colors */
+/* #FF661A */
+/* UI Secondary Colors */
+/* 3.0 colors */
+/* Using www naming convention for now, should be consistent with gui */
+/* #CF63CF Sounds Primary */
+/* modals */
+/* Overlay UI Gray Colors */
+/* Typography Colors */
+/* Down Deep */
+/*
+    Frameless           <http://framelessgrid.com/>
+    by Joni Korpi       <http://jonikorpi.com/>
+    licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+/* Media Queries */
+/* Width */
+/*
+* ... small | medium     | intermediate | big ...
+* ... medium-and-smaller |
+*          ... intermediate-and-smaller |
+*/
+/* Height */
+@media only screen and (max-width : 479px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  #view {
+    text-align: center;
+  }
+
+  .inner {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+@media only screen and (min-width : 942px) {
+  .inner {
+    margin: 0 auto;
+    width: 942px;
+  }
+}
+body {
   background-color: #088763;
+}
+
+.access .button {
+  background-color: #2B732B;
 }
 
 .community .button {
@@ -2267,6 +2463,7 @@ row to appear to contain overflow. */
   background-color: white;
   padding: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 h1 {
@@ -2275,13 +2472,21 @@ h1 {
 }
 
 h2 {
-  font-size: 3.25rem;
-  line-height: 3.75rem;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 2.5rem;
+}
+h3.special {
+  margin: 50px auto -50px;
+}
+@media only screen and (max-width : 941px) {
+  h3.special {
+    margin: 50px auto 30px;
+  }
 }
 
 h4 {
@@ -2299,6 +2504,10 @@ h5 {
 p {
   font-size: 1rem;
   line-height: 2rem;
+}
+
+.p-big {
+  font-size: 1.125rem;
 }
 
 p a {
@@ -2342,7 +2551,7 @@ a, a:link, a:visited, a:active {
 .message-section h1, .message-section h2, .message-section p {
   color: white;
 }
-@media only screen and (max-width : 960px) {
+@media only screen and (max-width : 941px) {
   .message-section {
     padding: 0px;
   }
@@ -2353,10 +2562,11 @@ a, a:link, a:visited, a:active {
 
 .masthead {
   padding-top: 50px;
+  align-items: start;
 }
 .masthead p {
   font-size: 1.25rem;
-  line-height: 2rem;
+  margin-top: 0px;
   font-weight: bold;
 }
 @media only screen and (min-width : 942px) {
@@ -2368,7 +2578,7 @@ a, a:link, a:visited, a:active {
     max-width: 440px;
   }
 }
-@media only screen and (max-width : 960px) {
+@media only screen and (max-width : 941px) {
   .masthead {
     flex-direction: column;
     align-items: center;
@@ -2385,7 +2595,7 @@ a, a:link, a:visited, a:active {
 }
 @media only screen and (min-width : 768px) and (max-width : 941px) {
   .masthead .masthead-content, .masthead img {
-    max-width: 620px;
+    max-width: 520px;
   }
 }
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -2400,12 +2610,7 @@ a, a:link, a:visited, a:active {
 }
 
 .wave-icon-desktop {
-  margin-left: -65px;
-}
-@media only screen and (max-width : 1060px) {
-  .wave-icon-desktop {
-    margin-left: 0px;
-  }
+  margin: 80px 0 0 0;
 }
 
 .message-content {
@@ -2414,6 +2619,10 @@ a, a:link, a:visited, a:active {
 @media only screen and (min-width : 942px) {
   .message-content h2 {
     max-width: 300px;
+    overflow-wrap: break-word;
+  }
+  .message-content p:first-of-type {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width : 941px) {
@@ -2443,11 +2652,12 @@ a, a:link, a:visited, a:active {
 .message-content .wave-icon-and-title {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .message-content .wave-icon-and-title img {
   margin-right: 20px;
 }
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 479px) {
   .message-content .wave-icon-and-title {
     flex-direction: column;
   }
@@ -2460,6 +2670,9 @@ a, a:link, a:visited, a:active {
   .message-content .wave-icon-and-title {
     max-width: 460px;
   }
+}
+.message-content .wave-icon-and-title h2 {
+  text-align: left;
 }
 .message-content .message-from-team, .message-content .directors-message {
   max-width: 620px;
@@ -2495,8 +2708,11 @@ a, a:link, a:visited, a:active {
 }
 
 .pull-quote {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.45rem;
+  line-height: 2rem;
+  text-align: left;
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 @media only screen and (max-width : 479px) {
   .pull-quote {
@@ -2525,25 +2741,49 @@ a, a:link, a:visited, a:active {
   margin-bottom: -75px;
   background-image: url("/images/annual-report/2021/1_SEC Section/quote (blue).svg");
 }
+@media only screen and (max-width : 767px) {
+  .pull-quote.blue {
+    max-width: 460px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 .pull-quote.green {
   font-weight: 500;
   text-align: left;
+  margin-left: 20px;
 }
 .pull-quote.green:before {
   margin-bottom: -75px;
   background-image: url("/images/annual-report/2021/2_Access Section/quote (green).svg");
 }
+@media only screen and (max-width : 767px) {
+  .pull-quote.green {
+    margin-bottom: 15px;
+  }
+}
 
 .workshop {
   width: 100%;
-  max-width: 760px;
   margin: auto;
 }
-.workshop h4 {
+.workshop h3 {
   text-align: left;
 }
-.workshop h4.center {
+.workshop h3.center {
   text-align: center;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+}
+.workshop p {
+  text-align: left;
+}
+.workshop .sec-image {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto 0;
+  display: block;
 }
 
 .pull-quote-attr {
@@ -2552,9 +2792,21 @@ a, a:link, a:visited, a:active {
   float: right;
   text-align: right;
   width: 100%;
+  margin-top: 0px;
 }
 .pull-quote-attr.right {
   text-align: right;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width : 767px) {
+  .pull-quote-attr.right {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .pull-quote-attr {
+    margin-bottom: 40px;
+  }
 }
 
 .mission-section {
@@ -2569,8 +2821,18 @@ a, a:link, a:visited, a:active {
   }
 }
 .mission-section .inner {
-  padding-top: 124px;
+  padding-top: 172px;
   width: 620px;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .mission-section .inner {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .mission-section .inner {
+    padding-top: 80px;
+  }
 }
 .mission-section .inner h5 {
   margin: 20px 0 0;
@@ -2581,13 +2843,13 @@ a, a:link, a:visited, a:active {
 }
 .mission-section .four-up {
   margin: 56px 0 124px 0;
-  max-width: 940px;
+  max-width: 620px;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media only screen and (min-width : 768px) and (max-width : 941px) {
   .mission-section .four-up {
@@ -2596,7 +2858,7 @@ a, a:link, a:visited, a:active {
 }
 @media only screen and (max-width : 767px) {
   .mission-section .four-up {
-    margin-top: 76px;
+    margin-top: 10px;
     align-items: center;
   }
 }
@@ -2616,14 +2878,26 @@ a, a:link, a:visited, a:active {
   }
 }
 .mission-section .one-p {
-  width: 300px;
+  width: 290px;
   height: 493px;
-  margin-right: 20px;
 }
 .mission-section .one-p.top {
   margin-top: 0px;
 }
-@media only screen and (max-width : 941px) {
+.mission-section .one-p .inner {
+  padding-top: 40px;
+}
+@media only screen and (min-width : 942px) {
+  .mission-section .one-p .inner {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .mission-section .one-p .inner {
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 767px) {
   .mission-section .one-p {
     padding: 0;
     background-position: center;
@@ -2631,14 +2905,15 @@ a, a:link, a:visited, a:active {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
+    height: initial;
+    margin-top: 30px;
   }
   .mission-section .one-p img {
-    width: 300px;
+    width: 290px;
   }
-}
-@media only screen and (max-width : 767px) {
-  .mission-section .one-p {
-    margin-top: 62px;
+  .mission-section .one-p .inner {
+    padding-top: 15px;
   }
 }
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -2647,7 +2922,7 @@ a, a:link, a:visited, a:active {
   }
 }
 .mission-section .one-p .four-up-title {
-  width: 300px;
+  width: 290px;
   margin: 16px auto 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2661,6 +2936,7 @@ a, a:link, a:visited, a:active {
   height: 134px;
   line-height: 1.5;
   text-align: center;
+  overflow-wrap: break-word;
 }
 .mission-section .one-p .four-up-title p {
   font-size: 1.25rem;
@@ -2758,19 +3034,40 @@ a, a:link, a:visited, a:active {
 .reach-section.t {
   padding-bottom: 0px;
 }
+.reach-section.t .inner {
+  max-width: 660px;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .reach-section.t .inner .reach-translation {
+    flex-direction: row;
+  }
+  .reach-section.t .inner h3, .reach-section.t .inner div, .reach-section.t .inner p {
+    text-align: left;
+  }
+  .reach-section.t .inner .inline {
+    justify-content: start;
+  }
+}
 .reach-section h2, .reach-section h3, .reach-section h4, .reach-section p {
   color: white;
 }
 .reach-section h2 {
-  font-size: 24px;
+  font-size: 2rem;
+  line-height: 1rem;
 }
 .reach-section .reach-intro {
   max-width: 900px;
   text-align: center;
+  width: 100%;
 }
 .reach-section .reach-intro .hed {
-  max-width: 630px;
+  max-width: 620px;
   margin: auto;
+}
+@media only screen and (max-width : 479px) {
+  .reach-section .reach-intro .hed {
+    margin: auto 8px;
+  }
 }
 .reach-section .reach-intro .reach-numbers {
   display: flex;
@@ -2799,7 +3096,7 @@ a, a:link, a:visited, a:active {
 }
 .reach-section .reach-translation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
   width: 100%;
@@ -2808,7 +3105,7 @@ a, a:link, a:visited, a:active {
   max-width: 300px;
 }
 .reach-section .reach-translation img {
-  max-width: 380px;
+  max-width: 340px;
 }
 .reach-section .reach-translation .inline {
   display: flex;
@@ -2845,74 +3142,16 @@ a, a:link, a:visited, a:active {
   }
 }
 
-.bubble {
-  background-color: rgba(0, 0, 0, 0.15);
-  color: #fff;
-  font-weight: 500;
-  border-radius: 50px;
-  padding: 8px 36px;
-  font-size: 1rem;
-  margin: 15px auto;
-  width: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.bubble img {
-  margin: 0px 8px;
-  width: 30px;
-  height: 30px;
-}
 .bubble.left-align {
-  margin: 0 0 20px 0;
+  margin: 50px 0 20px 0;
 }
-.bubble.increase.dark .million {
-  font-size: 1rem;
-  margin: 0 3px;
+@media only screen and (max-width : 767px) {
+  .bubble.left-align {
+    margin: 50px auto 20px auto;
+  }
 }
-.bubble.increase.dark .million span:before {
-  display: none;
-}
-.bubble.increase span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.bubble.increase span:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("/images/annual-report/2020/Symbols-UI/Arrow_up.svg");
-  background-size: contain;
-  display: inline-block;
-  margin-right: 10px;
-}
-.bubble.spotlight:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("/images/annual-report/2020/Symbols-UI/LightBulb_spotlightstory.svg");
-  background-size: contain;
-  display: inline-block;
-  margin-right: 10px;
-}
-.bubble.snapshot:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("/images/annual-report/2020/Symbols-UI/Camera_snapshots.svg");
-  background-size: contain;
-  display: inline-block;
-  margin-right: 10px;
-}
-.bubble.SEC {
-  background-color: #3373cc;
-}
-.bubble.community {
-  background-color: #774dcb;
-}
-.bubble.access {
-  background-color: #088763;
+.bubble.green {
+  padding: 8px 36px;
 }
 
 .map-org-header {
@@ -2930,15 +3169,25 @@ a, a:link, a:visited, a:active {
   max-width: 840px;
   margin: auto;
 }
-@media (max-width: only screen and (max-width : 941px)) {
+@media only screen and (max-width : 941px) {
   .country-org-lists {
     width: calc(100% - 30px);
     text-align: left;
   }
 }
+@media only screen and (max-width : 479px) {
+  .country-org-lists {
+    flex-direction: column;
+  }
+}
 .country-org-lists .org-list {
-  width: 98%;
+  width: 48%;
   text-align: left;
+}
+@media only screen and (max-width : 479px) {
+  .country-org-lists .org-list {
+    width: 100%;
+  }
 }
 .country-org-lists h5 {
   margin-bottom: -4px;
@@ -3007,14 +3256,51 @@ a, a:link, a:visited, a:active {
   text-align: left;
   width: 300px;
 }
+@media only screen and (min-width : 942px) {
+  .datapoint.world img, .datapoint.world p, .datapoint.world h3, .datapoint.world h4, .datapoint.saudi-arabia img, .datapoint.saudi-arabia p, .datapoint.saudi-arabia h3, .datapoint.saudi-arabia h4 {
+    margin: 0 80px;
+  }
+}
 
+.datapoint.world {
+  margin-top: 68px;
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .datapoint.world img, .datapoint.world p {
+    margin: 0 0;
+    width: 40%;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .datapoint.world {
+    flex-direction: column;
+  }
+  .datapoint.world img + p {
+    margin-top: 25px;
+  }
+}
+
+.datapoint.saudi-arabia {
+  margin-top: 112px;
+}
 .datapoint.saudi-arabia h4 {
   text-align: left;
   margin-left: 40px;
   margin-bottom: 10px;
 }
+@media only screen and (min-width : 942px) {
+  .datapoint.saudi-arabia h4 {
+    margin: 0 80px;
+  }
+}
 .datapoint.saudi-arabia p {
   font-size: 16px;
+}
+@media only screen and (max-width : 767px) {
+  .datapoint.saudi-arabia {
+    flex-direction: column;
+    margin-top: 75px;
+  }
 }
 
 @media only screen and (max-width : 941px) {
@@ -3099,6 +3385,9 @@ a, a:link, a:visited, a:active {
   }
 }
 
+.initiatives-section {
+  padding-top: 50px;
+}
 .initiatives-section .initiatives-intro .inner {
   display: flex;
   flex-direction: column;
@@ -3119,7 +3408,6 @@ a, a:link, a:visited, a:active {
   background-size: contain;
   background-repeat: no-repeat;
   height: 165px;
-  margin-bottom: 60px;
 }
 .initiatives-section .initiatives-intro .initiatives-pillars h4 {
   color: white;
@@ -3130,6 +3418,7 @@ a, a:link, a:visited, a:active {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: 4px;
 }
 .initiatives-section .initiatives-intro .initiatives-pillars .three-pillars {
   display: flex;
@@ -3137,23 +3426,14 @@ a, a:link, a:visited, a:active {
   width: 100%;
   justify-content: space-between;
 }
-.initiatives-section .initiatives-intro .initiatives-pillars .equity-and-global {
-  width: 100%;
-}
-.initiatives-section .initiatives-intro .initiatives-pillars .equity-and-global .pillar-splash {
-  margin: 12px 0;
-}
-.initiatives-section .initiatives-intro .initiatives-pillars .equity-and-global .pillar-splash h4 {
-  color: black;
-}
-@media only screen and (min-width : 768px) and (max-width : 941px) {
-  .initiatives-section .initiatives-intro .initiatives-pillars .equity-and-global .pillar-splash {
-    margin-top: 16px;
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-intro .initiatives-pillars {
+    height: 66px;
   }
 }
 @media only screen and (min-width : 942px) {
   .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
-    width: 244px;
+    width: 228px;
     height: 160px;
   }
   .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
@@ -3165,11 +3445,14 @@ a, a:link, a:visited, a:active {
     max-width: 620px;
   }
   .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
-    width: 192px;
+    width: 188px;
     height: 128px;
   }
   .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
     height: 44px;
+  }
+  .initiatives-section .initiatives-intro h4 {
+    font-size: 1.25rem;
   }
 }
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -3178,17 +3461,14 @@ a, a:link, a:visited, a:active {
   }
   .initiatives-section .initiatives-intro h4 {
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.3;
   }
   .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
-    width: 136px;
-    height: 105px;
+    width: 142px;
+    height: 89px;
   }
   .initiatives-section .initiatives-intro .three-pillars .pillar-splash.community {
     width: 164px;
-  }
-  .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
-    height: 14px;
   }
 }
 @media only screen and (max-width : 479px) {
@@ -3196,30 +3476,29 @@ a, a:link, a:visited, a:active {
     max-width: 300px;
   }
   .initiatives-section .initiatives-intro h4 {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     line-height: 1rem;
   }
   .initiatives-section .initiatives-intro .three-pillars .pillar-splash {
-    width: 90px;
+    width: 92px;
     height: 64px;
+    margin-bottom: 0px;
+    margin-left: 2px;
   }
   .initiatives-section .initiatives-intro .three-pillars .pillar-splash.community {
     width: 108px;
   }
-  .initiatives-section .initiatives-intro .equity-and-global .pillar-splash {
-    height: 10px;
-  }
 }
 .initiatives-section .initiatives-subsection-header {
   background-image: url("/images/annual-report/2020/Juice-Pattern.svg");
-  padding: 92px 0;
+  padding: 92px 25px;
 }
 .initiatives-section .initiatives-subsection-header.SEC {
   background-color: #3373cc;
   background-position: 50% 100%;
 }
 .initiatives-section .initiatives-subsection-header.access {
-  background-color: #0b8e69;
+  background-color: #2B732B;
   background-position: 50% 0%;
   margin: 70px 0;
 }
@@ -3263,13 +3542,32 @@ a, a:link, a:visited, a:active {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content.lab {
+    width: calc(100% - 50px);
+    margin: auto;
+  }
+  .initiatives-section .initiatives-subsection-content.lab .images {
+    margin: auto;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content.lab.second .inner .two-wide .text {
+    max-width: 260px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content.lab.second .inner .two-wide .text {
+    max-width: 100%;
+  }
+}
 .initiatives-section .initiatives-subsection-content .content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  max-width: 760px;
+  max-width: 800px;
   margin: auto;
   justify-content: space-around;
 }
@@ -3286,7 +3584,7 @@ a, a:link, a:visited, a:active {
     flex-direction: column-reverse;
   }
 }
-@media only screen and (min-width : 768px) and (max-width : 941px) {
+@media only screen and (min-width : 480px) and (max-width : 767px) {
   .initiatives-section .initiatives-subsection-content .content {
     flex-direction: column;
   }
@@ -3297,6 +3595,7 @@ a, a:link, a:visited, a:active {
 .initiatives-section .initiatives-subsection-content .content .text .larger {
   font-size: 1.25rem;
   line-height: 2.5rem;
+  margin-top: 8px;
 }
 @media only screen and (min-width : 768px) and (max-width : 941px) {
   .initiatives-section .initiatives-subsection-content .content .text {
@@ -3360,17 +3659,19 @@ a, a:link, a:visited, a:active {
 .initiatives-section .initiatives-subsection-content .content.two-up .stats {
   width: 100%;
   max-width: 170px;
+  margin-top: -15px;
 }
 @media only screen and (max-width : 767px) {
   .initiatives-section .initiatives-subsection-content .content.two-up .stats {
     max-width: 100%;
+    margin-top: 0px;
   }
 }
 .initiatives-section .initiatives-subsection-content .content.two-up .stats .stat-block {
   display: inline-block;
   text-align: center;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media only screen and (max-width : 767px) {
   .initiatives-section .initiatives-subsection-content .content.two-up .stats .stat-block {
@@ -3394,29 +3695,29 @@ a, a:link, a:visited, a:active {
   margin: 30px auto 50px;
 }
 .initiatives-section .initiatives-subsection-content .map img {
-  width: 100%;
+  width: 90%;
+  max-width: 780px;
+  margin: auto;
+  display: block;
 }
 .initiatives-section .initiatives-subsection-content .bubble {
   margin-left: 0px;
   color: white;
   font-weight: bold;
 }
-@media only screen and (max-width : 941px) {
+@media only screen and (max-width : 767px) {
   .initiatives-section .initiatives-subsection-content .bubble {
     margin-left: auto;
   }
 }
-@media only screen and (max-width : 941px) {
-  .initiatives-section .initiatives-subsection-content .bubble.spotlight {
-    margin: auto;
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .bubble.spotlight + h4 {
+    text-align: center;
+    margin-top: 15px;
   }
-}
-.initiatives-section .initiatives-subsection-content .bubble.spotlight.india {
-  margin: 0 0 20px;
-}
-@media only screen and (max-width : 941px) {
-  .initiatives-section .initiatives-subsection-content .bubble.spotlight.india {
-    margin: 0 auto 20px;
+  .initiatives-section .initiatives-subsection-content .bubble.spotlight + h4 + p.larger {
+    text-align: center;
+    margin-top: 0px;
   }
 }
 .initiatives-section .initiatives-subsection-content .bubble.inverted {
@@ -3434,6 +3735,16 @@ a, a:link, a:visited, a:active {
   .initiatives-section .initiatives-subsection-content .bubble.snapshot.bump {
     margin-left: auto;
   }
+}
+.initiatives-section .initiatives-subsection-content p.larger:before {
+  content: "";
+  background: url("/images/annual-report/2021/1_SEC Section/Location.svg");
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  margin-right: 5px;
 }
 .initiatives-section .initiatives-subsection-content .about-breaker {
   text-align: center;
@@ -3475,20 +3786,36 @@ a, a:link, a:visited, a:active {
   font-size: 2.25rem;
   line-height: 3rem;
 }
+.initiatives-section .initiatives-subsection-content .inner.stacked {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner.stacked {
+    max-width: 460px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-subsection-content .inner.stacked {
+    max-width: calc(100% - 50px);
+    width: 100%;
+  }
+}
 @media only screen and (min-width : 942px) {
   .initiatives-section .initiatives-subsection-content .inner {
-    max-width: 940px;
+    max-width: 840px;
     padding: 72px 0;
   }
 }
 @media only screen and (min-width : 480px) and (max-width : 941px) {
   .initiatives-section .initiatives-subsection-content .inner {
-    padding-top: 72px;
+    padding: 72px 0;
   }
 }
 @media only screen and (min-width : 768px) and (max-width : 941px) {
   .initiatives-section .initiatives-subsection-content .inner {
-    max-width: 620px;
+    width: calc(100% - 100px);
   }
 }
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -3498,16 +3825,57 @@ a, a:link, a:visited, a:active {
 }
 @media only screen and (max-width : 479px) {
   .initiatives-section .initiatives-subsection-content .inner {
-    max-width: 300px;
+    max-width: calc(100% - 50px);
+    margin: auto;
     padding-top: 32px;
+    padding-bottom: 72px;
   }
 }
 .initiatives-section .initiatives-subsection-content .inner .two-wide {
   margin: 50px auto 0px;
+  max-width: 840px;
+  justify-content: space-between;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide.scratch-lab-intro {
+  margin: 24px auto 16px;
+}
+@media only screen and (min-width : 942px) {
+  .initiatives-section .initiatives-subsection-content .inner .two-wide.scratch-lab-intro .text {
+    max-width: 380px;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .bubble {
+  margin: -25px 0 40px;
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner .two-wide .bubble {
+    margin: -25px auto 30px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner .two-wide h4 {
+    margin-bottom: 20px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner .two-wide + p {
+    text-align: left;
+  }
 }
 .initiatives-section .initiatives-subsection-content .inner .two-wide .text {
   max-width: 480px;
   width: 100%;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner .two-wide .text {
+    max-width: 230px;
+    text-align: left;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide.yt {
+  margin-top: 10px;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide.yt p {
+  text-align: left;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide.yt + .video-preview {
+  margin: 30px auto;
 }
 .initiatives-section .initiatives-subsection-content .inner .two-wide .images {
   max-width: 350px;
@@ -3516,9 +3884,54 @@ a, a:link, a:visited, a:active {
 .initiatives-section .initiatives-subsection-content .inner .two-wide .images img {
   width: 100%;
 }
-@media only screen and (max-width : 941px) {
+@media only screen and (min-width : 768px) and (max-width : 941px) {
   .initiatives-section .initiatives-subsection-content .inner .two-wide .images img {
     margin-bottom: -40px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-subsection-content .inner .two-wide .images {
+    margin-bottom: 20px;
+  }
+  .initiatives-section .initiatives-subsection-content .inner .two-wide .images + p {
+    text-align: left;
+  }
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .images.yt-splash {
+  background-image: url("/images/annual-report/2021/3_Community Section/YT data splash.svg");
+  background-size: contain;
+  height: 300px;
+  max-width: 300px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .images.yt-splash .num-block {
+  position: absolute;
+  font-weight: bold;
+  width: 155px;
+  text-align: center;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .images.yt-splash .num-block.one {
+  top: 41px;
+  left: 147px;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .images.yt-splash .num-block.two {
+  top: 74px;
+  left: -5px;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .images.yt-splash .num-block.three {
+  top: 175px;
+  left: 91px;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .images.yt-splash .num-block .num {
+  font-size: 34px;
+}
+.initiatives-section .initiatives-subsection-content .inner .two-wide .images.yt-splash .num-block .small-text {
+  font-size: 18px;
+}
+@media only screen and (min-width : 768px) and (max-width : 941px) {
+  .initiatives-section .initiatives-subsection-content .inner .two-wide + p {
+    text-align: left;
   }
 }
 .initiatives-section .initiatives-subsection-content .inner .flex-content {
@@ -3526,7 +3939,7 @@ a, a:link, a:visited, a:active {
   width: 100%;
   text-align: left;
 }
-@media only screen and (max-width : 941px) {
+@media only screen and (max-width : 767px) {
   .initiatives-section .initiatives-subsection-content .inner .flex-content {
     flex-direction: column;
     align-items: center;
@@ -3535,6 +3948,12 @@ a, a:link, a:visited, a:active {
   .initiatives-section .initiatives-subsection-content .inner .flex-content.aaron {
     text-align: center;
     flex-direction: column-reverse;
+  }
+  .initiatives-section .initiatives-subsection-content .inner .flex-content h3 {
+    text-align: center;
+  }
+  .initiatives-section .initiatives-subsection-content .inner .flex-content .larger {
+    text-align: center;
   }
 }
 .initiatives-section .initiatives-subsection-content .inner .flex-content.split.content .text {
@@ -3563,8 +3982,8 @@ a, a:link, a:visited, a:active {
   width: 100%;
 }
 @media only screen and (min-width : 768px) and (max-width : 941px) {
-  .initiatives-section .initiatives-subsection-content .inner .flex-content.content {
-    max-width: 620px;
+  .initiatives-section .initiatives-subsection-content .inner .flex-content.content .text {
+    max-width: 360px;
   }
 }
 .initiatives-section .initiatives-subsection-content .extending-reach {
@@ -3581,16 +4000,48 @@ a, a:link, a:visited, a:active {
   border-radius: 4px;
   margin-right: 20px;
 }
-.initiatives-section .year-in-review {
+.initiatives-section .sparkles {
   position: relative;
-  padding: 180px 0;
+  width: calc(100% - 70px);
+  margin: 0 auto -267px;
+  z-index: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 145px;
+  align-items: flex-start;
 }
 @media only screen and (max-width : 941px) {
-  .initiatives-section .year-in-review {
-    padding: 80px 15px;
+  .initiatives-section .sparkles {
+    margin: 0 auto -251px;
+    height: 119px;
   }
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .sparkles .sparkle-left {
+    margin-left: -40px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .sparkles .sparkle-right {
+    margin-right: -40px;
+  }
+}
+.initiatives-section .sparkles .down-arrow {
+  align-self: flex-end;
+  width: 50px;
+}
+.initiatives-section .new-languages {
+  margin-top: 24px;
+}
+.initiatives-section .year-in-review {
+  position: relative;
+  padding: 330px 0 180px 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-image: url("/images/annual-report/2021/3_Community Section/Timeline/Timeline Background (Base).svg");
+  background-size: cover;
+  background-position: top center;
 }
 .initiatives-section .year-in-review .upper-wave {
   width: 100%;
@@ -3608,7 +4059,7 @@ a, a:link, a:visited, a:active {
   z-index: 1;
 }
 .initiatives-section .year-in-review .connector.left {
-  margin-left: calc((100% - 980px) / 2 + 230px);
+  margin-left: calc((100% - 980px) / 2 + 245px);
 }
 .initiatives-section .year-in-review .connector.right {
   margin-left: 50%;
@@ -3630,6 +4081,18 @@ a, a:link, a:visited, a:active {
     display: none;
   }
 }
+.initiatives-section .year-in-review .illustrations .june {
+  display: block;
+  position: absolute;
+  left: 121px;
+  top: 1400px;
+}
+.initiatives-section .year-in-review .illustrations .august {
+  display: block;
+  position: absolute;
+  right: 58px;
+  top: 2427px;
+}
 .initiatives-section .year-in-review .illustrations img {
   display: block;
   position: absolute;
@@ -3638,24 +4101,13 @@ a, a:link, a:visited, a:active {
   position: absolute;
   right: 0px;
 }
-.initiatives-section .year-in-review .illustrations img.may {
-  left: 0px;
-  top: 900px;
-}
 .initiatives-section .year-in-review .illustrations img.june {
-  right: -50px;
-  top: 1570px;
-}
-.initiatives-section .year-in-review .illustrations img.june-2 {
-  right: 0px;
-  top: 2079px;
-  width: 25px;
-  height: 25px;
-  border-radius: 4px;
-}
-.initiatives-section .year-in-review .illustrations img.july {
   left: 0px;
-  top: 2270px;
+  top: 1000px;
+}
+.initiatives-section .year-in-review .illustrations img.august {
+  right: -50px;
+  top: 1870px;
 }
 .initiatives-section .year-in-review .lower-wave {
   width: 100%;
@@ -3684,8 +4136,11 @@ a, a:link, a:visited, a:active {
 .initiatives-section .world p.right {
   text-align: right;
 }
+.initiatives-section .initiatives-access, .initiatives-section .initiatives-community {
+  overflow: hidden;
+}
 .initiatives-section .initiatives-access .world, .initiatives-section .initiatives-community .world {
-  max-width: 600px;
+  max-width: 700px;
   margin: 50px auto;
 }
 @media only screen and (max-width : 941px) {
@@ -3693,6 +4148,11 @@ a, a:link, a:visited, a:active {
     width: calc(100% - 30px);
     padding: 0 15px;
   }
+}
+.initiatives-section .initiatives-access .world p.subhed, .initiatives-section .initiatives-community .world p.subhed {
+  font-size: 1.125rem;
+  max-width: 500px;
+  margin: 15px auto;
 }
 .initiatives-section .initiatives-access .connecting-educators, .initiatives-section .initiatives-community .connecting-educators {
   max-width: 700px;
@@ -3765,12 +4225,66 @@ a, a:link, a:visited, a:active {
   left: 0px;
   width: 100%;
 }
+@media only screen and (min-width : 942px) {
+  .initiatives-section .initiatives-access .inner, .initiatives-section .initiatives-community .inner {
+    width: 850px;
+  }
+}
 .initiatives-section .initiatives-access .inner.center, .initiatives-section .initiatives-community .inner.center {
   text-align: center;
   margin-top: 80px;
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
   margin-top: 70px;
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .initiatives-access .inner.center, .initiatives-section .initiatives-community .inner.center {
+    width: calc(100% - 50px);
+    max-width: 300px;
+    margin: auto;
+  }
+}
+.initiatives-section .initiatives-access .text-and-media-snippet h4, .initiatives-section .initiatives-access .text-and-media-snippet p, .initiatives-section .initiatives-community .text-and-media-snippet h4, .initiatives-section .initiatives-community .text-and-media-snippet p {
+  text-align: left;
+}
+.initiatives-section .initiatives-access .text-and-media-snippet .half, .initiatives-section .initiatives-community .text-and-media-snippet .half {
+  width: 48%;
+}
+.initiatives-section .initiatives-access .text-and-media-snippet .half h4, .initiatives-section .initiatives-community .text-and-media-snippet .half h4 {
+  font-size: 1.3rem;
+}
+.initiatives-section .initiatives-access .text-and-media-snippet.medium-title h4, .initiatives-section .initiatives-community .text-and-media-snippet.medium-title h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+@media only screen and (max-width : 941px) {
+  .initiatives-section .initiatives-access .text-and-media-snippet, .initiatives-section .initiatives-community .text-and-media-snippet {
+    width: 100%;
+  }
+  .initiatives-section .initiatives-access .text-and-media-snippet.regular, .initiatives-section .initiatives-community .text-and-media-snippet.regular {
+    flex-direction: row;
+  }
+  .initiatives-section .initiatives-access .text-and-media-snippet.reverse, .initiatives-section .initiatives-community .text-and-media-snippet.reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .initiatives-section .initiatives-access .text-and-media-snippet .half, .initiatives-section .initiatives-community .text-and-media-snippet .half {
+    width: 100%;
+  }
+  .initiatives-section .initiatives-access .text-and-media-snippet .half img, .initiatives-section .initiatives-community .text-and-media-snippet .half img {
+    max-width: 350px;
+    width: 100%;
+  }
+  .initiatives-section .initiatives-access .text-and-media-snippet.regular, .initiatives-section .initiatives-community .text-and-media-snippet.regular {
+    flex-direction: column-reverse;
+  }
+  .initiatives-section .initiatives-access .text-and-media-snippet.reverse, .initiatives-section .initiatives-community .text-and-media-snippet.reverse {
+    flex-direction: column;
+  }
+}
+.initiatives-section .initiatives-access .text-and-media-snippet + p, .initiatives-section .initiatives-community .text-and-media-snippet + p {
+  text-align: left;
 }
 .initiatives-section .initiatives-access .moderation-and-guidelines, .initiatives-section .initiatives-community .moderation-and-guidelines {
   display: flex;
@@ -3804,6 +4318,29 @@ a, a:link, a:visited, a:active {
 .initiatives-section .initiatives-access .community-sds, .initiatives-section .initiatives-community .community-sds {
   text-align: center;
   margin-bottom: 68px;
+}
+.initiatives-section .initiatives-access .community-sds p, .initiatives-section .initiatives-community .community-sds p {
+  text-align: left;
+}
+.initiatives-section .initiatives-access .community-sds .sds-list, .initiatives-section .initiatives-community .community-sds .sds-list {
+  justify-content: space-between;
+  margin-top: 15px;
+}
+@media only screen and (max-width : 941px) {
+  .initiatives-section .initiatives-access .community-sds .sds-list, .initiatives-section .initiatives-community .community-sds .sds-list {
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+.initiatives-section .initiatives-access .community-sds .sds-list .sds-tile, .initiatives-section .initiatives-community .community-sds .sds-list .sds-tile {
+  width: 31%;
+  margin: 0px;
+}
+@media only screen and (max-width : 941px) {
+  .initiatives-section .initiatives-access .community-sds .sds-list .sds-tile, .initiatives-section .initiatives-community .community-sds .sds-list .sds-tile {
+    width: 200px;
+    margin: 8px;
+  }
 }
 .initiatives-section .initiatives-access .quotes-tag, .initiatives-section .initiatives-access .blm-tag, .initiatives-section .initiatives-community .quotes-tag, .initiatives-section .initiatives-community .blm-tag {
   align-self: flex-start;
@@ -3969,12 +4506,6 @@ a, a:link, a:visited, a:active {
     height: 300px;
   }
 }
-.initiatives-section .video-background.access {
-  background-image: url("/images/annual-report/2020/access/createalongs_splash.svg");
-}
-.initiatives-section .video-background.SEC {
-  background-image: url("/images/annual-report/2020/SEC/aroundtheworld_splash.svg");
-}
 .initiatives-section .video-thumbnail .button {
   top: 6px;
   font-size: 15px;
@@ -3986,7 +4517,6 @@ a, a:link, a:visited, a:active {
 }
 .initiatives-section .tweet-container {
   background-image: url("/images/annual-report/2021/3_Community Section/splash.svg");
-  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -4016,15 +4546,19 @@ a, a:link, a:visited, a:active {
 .initiatives-section .tweet-container .tweets div {
   width: 350px;
 }
-@media only screen and (max-width : 479px) {
+@media only screen and (max-width : 767px) {
   .initiatives-section .tweet-container .tweets {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .initiatives-section .tweet-container .tweets div {
-    width: 250px;
     margin: auto;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .initiatives-section .tweet-container .tweets div {
+    width: 300px;
   }
 }
 .initiatives-section .tweet-container .tweets .twitter-tweet {
@@ -4048,6 +4582,39 @@ a, a:link, a:visited, a:active {
 .sds-list .sds-tile p {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.framework-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+.framework-list .framework-tile {
+  width: 200px;
+  text-align: left;
+  font-weight: bold;
+}
+.framework-list .framework-tile img {
+  width: 100%;
+}
+.framework-list .framework-tile p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+@media only screen and (max-width : 941px) {
+  .framework-list {
+    justify-content: center;
+    margin: 0px;
+  }
+  .framework-list .framework-tile {
+    margin: 24px;
+  }
+}
+@media only screen and (max-width : 941px) and (max-width : 767px) {
+  .framework-list .framework-tile {
+    margin: 12px;
+  }
 }
 
 .founders-message {
@@ -4074,7 +4641,7 @@ a, a:link, a:visited, a:active {
     max-width: 300px;
   }
 }
-.founders-message h2, .founders-message p {
+.founders-message h2, .founders-message h4, .founders-message p {
   color: white;
 }
 .founders-message h2 {
@@ -4091,7 +4658,7 @@ a, a:link, a:visited, a:active {
   }
 }
 .founders-message .flex-content .text {
-  width: 60%;
+  width: 620px;
 }
 @media only screen and (max-width : 941px) {
   .founders-message .flex-content {
@@ -4100,8 +4667,14 @@ a, a:link, a:visited, a:active {
   .founders-message .flex-content .header, .founders-message .flex-content .text {
     width: 100%;
   }
-  .founders-message .flex-content p {
+  .founders-message .flex-content p, .founders-message .flex-content h2, .founders-message .flex-content h4 {
     text-align: left;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .founders-message .flex-content {
+    width: calc(100% - 50px);
+    margin: auto;
   }
 }
 .founders-message .signature {
@@ -4127,9 +4700,17 @@ a, a:link, a:visited, a:active {
   margin-top: 0px;
 }
 
+@media only screen and (max-width : 479px) {
+  p.contain-p {
+    width: calc(100% - 50px);
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
 .thank-you-image {
   max-width: 600px;
-  width: 100%;
+  width: calc(100% - 50px);
   margin: 50px auto;
 }
 .thank-you-image img {
@@ -4154,9 +4735,10 @@ a, a:link, a:visited, a:active {
     max-width: 460px;
   }
 }
-@media only screen and (max-width : 479px) {
+@media only screen and (max-width : 767px) {
   .looking-forward {
-    max-width: 300px;
+    width: calc(100% - 50px);
+    margin: 50px auto;
   }
 }
 .looking-forward img.illo {
@@ -4183,6 +4765,38 @@ a, a:link, a:visited, a:active {
   vertical-align: text-bottom;
 }
 
+.aaa-video {
+  width: 100%;
+  max-width: 1000px;
+  height: 380px;
+  margin: -50px auto -20px;
+  background-image: url("/images/annual-report/2021/3_Community Section/AAAAAAAA.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aaa-video .video-preview {
+  margin: 60px auto;
+}
+.aaa-video .button {
+  background-color: #774dcb;
+}
+@media only screen and (max-width : 941px) {
+  .aaa-video {
+    background-image: none;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+  .aaa-video {
+    height: 267px;
+  }
+}
+@media only screen and (max-width : 479px) {
+  .aaa-video {
+    height: 250px;
+  }
+}
+
 .supporters-section {
   padding: 0px 0 52px 0;
 }
@@ -4191,6 +4805,11 @@ a, a:link, a:visited, a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width : 767px) {
+  .supporters-section .inner {
+    width: calc(100% - 50px);
+  }
 }
 .supporters-section .subsection-tag {
   align-self: flex-start;
@@ -4262,7 +4881,8 @@ a, a:link, a:visited, a:active {
 }
 .supporters-section .supporters-level .supporters-list-side {
   margin: 0 1.25rem 0 0;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 .supporters-section .supporters-level .supporters-list-side li {
   margin: 0 0 0.75rem 0;
@@ -4336,7 +4956,7 @@ a, a:link, a:visited, a:active {
 }
 .supporters-section .in-kind {
   display: inline-block;
-  margin: 0 0 0 5px;
+  margin: 0 0 1px 5px;
   width: 8px;
   height: 8px;
   border-radius: 8px;
@@ -4367,7 +4987,8 @@ a, a:link, a:visited, a:active {
 }
 .leadership-section .leadership-board .board-member {
   text-align: center;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   margin-top: 44px;
   line-height: 1.5rem;
 }
@@ -4445,7 +5066,9 @@ a, a:link, a:visited, a:active {
 }
 @media only screen and (max-width : 479px) {
   .donate-section .donate-content {
-    width: 300px;
+    max-width: 300px;
+    width: calc(100% - 50px);
+    margin: auto;
   }
 }
 .donate-section .donate-button {
@@ -4525,6 +5148,9 @@ a, a:link, a:visited, a:active {
 @media only screen and (max-width : 767px) {
   .subnavigation {
     height: auto;
+  }
+  .subnavigation .sectionIndicator {
+    width: calc(100% - 30px);
   }
   .subnavigation .flex-row {
     flex-direction: row;

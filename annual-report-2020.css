@@ -1891,6 +1891,10 @@ row to appear to contain overflow. */
   border-radius: 4px;
   width: 32px;
   height: 32px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 .grid .thumbnail .thumbnail-info .thumbnail-title {
   float: left;
@@ -2386,6 +2390,9 @@ row to appear to contain overflow. */
   font-size: 1rem;
   text-align: left;
 }
+.text-and-media-snippet p.p-big {
+  font-size: 1.125rem;
+}
 @media only screen and (max-width : 941px) {
   .text-and-media-snippet p {
     text-align: center;
@@ -2452,10 +2459,10 @@ row to appear to contain overflow. */
 }
 .timeline-card {
   max-width: 460px;
+  z-index: 2;
   background-color: white;
   border-radius: 8px;
   position: relative;
-  z-index: 1;
   margin-bottom: 30px;
 }
 @media only screen and (max-width : 479px) {
@@ -2473,8 +2480,8 @@ row to appear to contain overflow. */
 }
 .timeline-card .timeline-content a {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 12px;
+  top: 1px;
 }
 .timeline-card .timeline-content img {
   margin-top: 10px;

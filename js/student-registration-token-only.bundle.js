@@ -217,7 +217,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([47,"common"]);
+/******/ 	deferredModules.push([46,"common"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -1178,7 +1178,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ 47:
+/***/ 46:
 /*!***********************************************************************************!*\
   !*** multi ./src/init.js ./src/views/studentregistration/studentregistration.jsx ***!
   \***********************************************************************************/

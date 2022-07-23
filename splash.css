@@ -3269,6 +3269,10 @@ a.social-messages-profile-link:hover {
   right: 1rem;
   top: auto;
 }
+.donate-banner a {
+  color: white;
+  text-decoration: underline;
+}
 
 @media only screen and (max-width: 640px) {
   .donate-banner .donate-container .donate-central-items {

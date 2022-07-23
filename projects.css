@@ -3808,6 +3808,7 @@ are not obscured by gradient overlay */
 .comment {
   position: relative;
   width: 100%;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -3831,6 +3832,7 @@ are not obscured by gradient overlay */
 .comment .comment-top-row {
   margin-bottom: 8px;
   width: 100%;
+  flex-direction: row;
 }
 .comment .comment-top-row .username {
   margin-right: auto;
@@ -3946,6 +3948,7 @@ are not obscured by gradient overlay */
 .comment .comment-body .comment-bottom-row {
   padding-top: 1rem;
   font-size: 0.75rem;
+  flex-direction: row;
   justify-content: space-between;
 }
 .comment .comment-body .comment-bottom-row .comment-time {
@@ -3968,6 +3971,10 @@ are not obscured by gradient overlay */
 
 .replies {
   width: calc(100% - 4rem);
+}
+.replies .comment-reply-row {
+  margin-left: -3.5rem;
+  width: calc(100% + 3.5rem);
 }
 
 .replies.collapsed > .comment:last-of-type:after {
@@ -4000,7 +4007,7 @@ are not obscured by gradient overlay */
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
-  width: 100%;
+  width: calc(100% - 0.5rem);
 }
 
 .expand-thread {
@@ -4586,9 +4593,6 @@ are not obscured by gradient overlay */
     padding: 0;
     width: 100%;
   }
-}
-.preview .comments-container .comment, .preview .comments-container .comment-top-row, .preview .comments-container .comment-bottom-row {
-  flex-direction: row;
 }
 .preview .comments-container .comment-bubble {
   text-align: left;
